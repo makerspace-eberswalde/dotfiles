@@ -1,3 +1,9 @@
+# DO NOT CHANGE THIS FILE!!!!! --> CHANGE YOUR ALIASES IN .zshrc
+
+
+
+
+
 source ~/.zshrc_oh-my-zsh
 alias zshrc="vim ~/.zshrc"
 alias gitc="vim ~/.gitconfig"
