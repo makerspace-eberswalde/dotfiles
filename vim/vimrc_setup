@@ -5,6 +5,4 @@ source $HOME/.vimrc_plugins
 " PATHOGEN
 execute pathogen#infect()
 
-" LEADER
-:let mapleader = ","
 

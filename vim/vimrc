@@ -1,4 +1,8 @@
+" LEADER
+:let mapleader = ","
+
 " DO NOT CHANGE THE SOURCE LINES
 source $HOME/.vimrc_setup
 
 " INSERT YOUR STUFF HERE
+"
