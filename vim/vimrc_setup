@@ -1,8 +1,10 @@
-" Pathogen
+" SOURCE OTHER FILES
+source $HOME/.vimrc_mappings
+source $HOME/.vimrc_plugins
+
+" PATHOGEN
 execute pathogen#infect()
 
-" Mappings Insert Letters
-" ===========================================================================================
-" escape insert mode
-:inoremap jk <esc>
-:inoremap JK <esc>
+" LEADER
+:let mapleader = ","
+
