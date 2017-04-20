@@ -9,6 +9,10 @@ alias vimrc="vim ~/.vimrc"
 alias vrc="vimrc"
 alias dotfiles="vim ~/.dotfiles/README.md -c ':NERDTreeFind'"
 alias dotf="dotfiles"
+alias dotf.goto="dotfiles.goto"
+alias dotfiles.goto="cd ~/.dotfiles && ls -lisa"
+alias tmuxc="tmuxconf"
+alias tmuxconf="vim ~/.tmux.conf"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
