@@ -1,13 +1,14 @@
 # install tmux from source for older linux versions: https://ubuntuincident.wordpress.com/2016/03/17/upgrade-tmux-to-the-latest-version/
-#sudo apt-get install tmux
-sudo apt-get install exuberant-ctags cmake libevent-dev libncurses5-dev
-cd /tmp
-wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz
-tar -xzf tmux-2.3.tar.gz
-cd tmux-2.3
-.configure && make
-sudo make install
-rm -rf tmux*
+#sudo apt-get update -yqqu
+sudo add-apt-repository -yu ppa:pi-rho/dev
+sudo apt-get update -yqqu
+sudo apt-get install -yqqu python-software-properties software-properties-common
+#sudo apt-get install -yqq tmux-next=2.3~20160913~bzr3547+20-1ubuntu1~ppa0~ubuntu16.04.1
+# sudo apt-get install -yqq tmux-next=2.3~20160913~bzr3547+20-1ubuntu1~ppa0~ubuntu15.10.1
+# sudo apt-get install -yqq tmux-next=2.3~20160913~bzr3547+20-1ubuntu1~ppa0~ubuntu15.04.1
+ sudo apt-get install -yqq tmux-next=2.3~20160913~bzr3547+20-1ubuntu1~ppa0~ubuntu14.04.1
+# sudo apt-get install -yqq tmux-next=2.3~20160913~bzr3547+20-1ubuntu1~ppa0~ubuntu12.04.1
+tmux-next -V
 
 # link tmux.conf_setup
 rm -f ~/.tmux.conf_setup 2>/dev/null
