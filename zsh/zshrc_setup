@@ -12,7 +12,9 @@ alias dotf="dotfiles"
 alias dotf.goto="dotfiles.goto"
 alias dotfiles.goto="cd ~/.dotfiles && ls -lisa"
 alias tmuxc="tmuxconf"
-alias tmuxconf="vim ~/.tmux.conf"
+alias tmux.conf="vim ~/.tmux.conf"
+alias tk="tmux.kill"
+alias tmux.kill="tmux kill-server"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
