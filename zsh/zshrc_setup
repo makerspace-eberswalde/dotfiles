@@ -23,6 +23,11 @@ export EDITOR='vim'
 # SOURCE
 # source ~/.bin/tmuxinator.zsh
 
+# TMUX: attach to tmux if session is already existent
+if [ -z $TMUX ];   then
+   /usr/bin/tmux attach || /usr/bin/tmux new
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
