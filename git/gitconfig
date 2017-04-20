@@ -1,2 +1,5 @@
 [include]
     path = ~/.gitconfig-setup
+[user]
+	email = divramod@gmail.com
+	name = Arvid Petermann
