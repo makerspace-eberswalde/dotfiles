@@ -7,6 +7,11 @@ FILE_CONFIG=`pwd`/gitconfig
 ln -s $FILE_CONFIG ~/.gitconfig
 
 # link 
+rm -f ~/.gitconfig-setup 2>/dev/null
+FILE_CONFIG_SETUP=`pwd`/gitconfig-setup
+ln -s $FILE_CONFIG_SETUP ~/.gitconfig-setup
+
+# link 
 rm -f ~/.gitignore 2>/dev/null
 FILE_IGNORE=`pwd`/gitignore
 ln -s $FILE_IGNORE ~/.gitignore
