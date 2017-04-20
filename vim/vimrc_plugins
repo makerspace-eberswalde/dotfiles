@@ -3,15 +3,11 @@
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>d :NERDTreeCWD<CR>
 
-
-let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
-let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
-
 "SOLARIZED: https://github.com/altercation/vim-colors-solarized 
 " =============================================================
 syntax enable
-" set background=dark
-colorscheme ron
+set background=dark
+colorscheme solarized
 
 " TMUX: https://github.com/christoomey/vim-tmux-navigator
 " =======================================================
