@@ -1,2 +1,1 @@
-source ~/.zshrc_oh-my-zsh
-alias zshrc="vim ~/.zshrc"
+source ~/.zshrc_setup
