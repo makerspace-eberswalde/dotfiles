@@ -1,11 +1,9 @@
+# INSTALL VIM
 sudo apt-get install vim
 
 # PATHOGEN
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-# PLUGINS
-git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
 # link vimrc
 rm -f ~/.vimrc 2>/dev/null
@@ -26,3 +24,8 @@ ln -s $FILE_RC_MAPPINGS ~/.vimrc_mappings
 rm -f ~/.vimrc_plugins 2>/dev/null
 FILE_RC_PLUGINS=`pwd`/vimrc_plugins
 ln -s $FILE_RC_PLUGINS ~/.vimrc_plugins
+
+# PLUGINS
+rm -rf ~/.vim/bundle/nerdtree
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
