@@ -28,4 +28,4 @@ ln -s $FILE_RC_PLUGINS ~/.vimrc_plugins
 # PLUGINS
 rm -rf ~/.vim/bundle/nerdtree
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-
+git clone https://github.com/christoomey/vim-tmux-navigator ~/.vim/bundle/vim-tmux-navigator

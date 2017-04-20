@@ -1,11 +1,10 @@
 # install tmux from source for older linux versions: https://ubuntuincident.wordpress.com/2016/03/17/upgrade-tmux-to-the-latest-version/
-# https://gist.github.com/P7h/91e14096374075f5316e
+# tmux_install.sh https://gist.github.com/P7h/91e14096374075f5316e
 sudo apt-get install tmux-next
 sudo rm -f /usr/bin/tmux
 sudo ln -s /usr/bin/tmux-next /usr/bin/tmux
 
 # vi-copy issue: https://github.com/tmux/tmux/issues/592
-
 
 # link tmux.conf_setup
 rm -f ~/.tmux.conf_setup 2>/dev/null

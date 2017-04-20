@@ -26,12 +26,6 @@ set -g base-index 1
 # Set the base index for panes to 1 instead of 0.
 setw -g pane-base-index 1
 
-# Mouse support - set to on if you want to use the mouse.
-#setw -g mode-mouse off
-#set -g mouse-select-pane off
-#set -g mouse-resize-pane off
-#set -g mouse-select-window off
-
 # Set the default terminal mode to 256color mode.
 set -g default-terminal "screen-256color"
 
@@ -57,8 +51,6 @@ unbind p
 bind p paste-buffer
 #bind -t vi-copy 'v' begin-selection
 #bind -t vi-copy 'y' copy-selection
-#bind-key -Tcopy-mode-vi 'v' send -X begin-selection
-#bind-key -Tcopy-mode-vi 'y' send -X copy-selection
 bind -Tcopy-mode-vi 'v' send -X begin-selection
 bind -Tcopy-mode-vi 'y' send -X copy-selection
 
@@ -102,10 +94,6 @@ bind -n M-\ if-shell "$is_vim" "send-keys M-\\" "select-pane -l"
 
 # https://github.com/tmux-plugins/vim-tmux-focus-events
 set -g focus-events on
-
-#set inactive/active window styles
-#set -g window-style 'fg=colour247,bg=colour236'
-#set -g window-active-style 'fg=colour250,bg=black'
 
 bind -n C-q copy-mode
 #bind-key -t vi-copy o copy-selection
