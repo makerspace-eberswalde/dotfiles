@@ -1,4 +1,3 @@
-pwd
-if [ ! -d ~/.oh-my-zsh ]; then
+if [ ! -e ~/.zshrc ]; then
   echo "in"
 fi

@@ -1,21 +1,14 @@
 # install zsh
-sudo apt-get install zsh
+# sudo apt-get install zsh
 
 # install oh-my-zsh: https://github.com/robbyrussell/oh-my-zsh
-if [ ! -d ~/.oh-my-zsh ]; then
-  sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-fi
+rm -rf ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
-# bakcup .zshrc to .zshrc_backup
-if [ -e ~/.zshrc ]; then
-  echo ".zshrc exists"
-  if [ -e ~/.zshrc_backup ]; then
-    echo "create .zshrc backup"
-    rm ~/.zshrc_backup
-  fi
-  echo "mv file to backup"
-  mv ~/.zshrc ~/.zshrc_backup
-fi
+# mv .zshrc to backup if existing
+mv ~/.zshrc ~/.zshrc_backup 2>/dev/null
 
 # link zshrc
-ln -s pwd/zshrc ~/.zshrc
+FILE=`pwd`/zshrc
+echo "link ~/.zshrc to $FILE" 
+ln -s $FILE ~/.zshrc
