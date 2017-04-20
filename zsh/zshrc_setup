@@ -15,6 +15,7 @@ alias tmuxc="tmuxconf"
 alias tmux.conf="vim ~/.tmux.conf"
 alias tk="tmux.kill"
 alias tmux.kill="tmux kill-server"
+alias tmux="TERM=screen-256color-bce tmux"
 
 # EXPORT
 export EDITOR='vim'

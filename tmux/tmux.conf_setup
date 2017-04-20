@@ -73,6 +73,7 @@ set -g window-status-format "|#[fg=white]#[fg=white,bg=colour234] #I #W"
 set -g window-status-current-format "#[fg=white]|#[fg=white] #[fg=colour235,bg=colour226]#[fg=colour235,bg=colour226,noreverse,bold] #I #W #[fg=colour226,bg=colour234,nobold]"
 
 set -g terminal-overrides 'xterm*:smcup@:rmcup@'
+set -g default-terminal "xterm"
 
 # https://til.hashrocket.com/posts/f4e777f1f5-fix-tmux-21-mode-mouse-error
 set -g mouse on
