@@ -1,12 +1,14 @@
 # DO NOT CHANGE THIS FILE!!!!! --> CHANGE YOUR ALIASES IN .zshrc
 alias zshrc="vim ~/.zshrc"
-alias zrc="vim ~/.zshrc"
-alias gitc="vim ~/.gitconfig"
-alias giti="vim ~/.gitignore"
+alias zrc="zshrc"
+alias gitc="gitconfig"
+alias gitconfig="vim ~/.gitconfig"
+alias giti="gitignore"
+alias gitignore="vim ~/.gitignore"
 alias vimrc="vim ~/.vimrc"
-alias vrc="vim ~/.vimrc"
-alias dotf="vim ~/.dotfiles/README.md -c ':NERDTree'"
-alias dotfiles="dotf"
+alias vrc="vimrc"
+alias dotfiles="vim ~/.dotfiles/README.md -c ':NERDTreeFind'"
+alias dotf="dotf"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
