@@ -7,9 +7,9 @@ if [ ! -d ~/.oh-my-zsh ]; then
 fi
 
 # bakcup .zshrc to .zshrc_backup
-if [ -f ~/.zshrc ]; then
+if [ -e ~/.zshrc ]; then
   echo ".zshrc exists"
-  if [ -f ~/.zshrc_backup ]; then
+  if [ -e ~/.zshrc_backup ]; then
     echo "create .zshrc backup"
     rm ~/.zshrc_backup
   fi
