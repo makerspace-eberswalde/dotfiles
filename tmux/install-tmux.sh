@@ -21,3 +21,7 @@ cp $FILE_CONF ~/.tmux.conf
 # https://www.cyberciti.biz/faq/debian-ubuntu-install-gem-the-frontend-to-rubygems/
 sudo apt-get install ruby gem
 sudo gem install tmuxinator
+mkdir ~/.bin
+wget -P ~/.bin https://github.com/tmuxinator/tmuxinator/blob/master/completion/tmuxinator.zsh
+mkdir ~/.tmuxinator
+ln -s ~/.dotfiles/tmux/tmuxinator/* ~/.tmuxinator

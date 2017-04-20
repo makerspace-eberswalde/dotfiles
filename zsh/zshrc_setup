@@ -16,6 +16,12 @@ alias tmux.conf="vim ~/.tmux.conf"
 alias tk="tmux.kill"
 alias tmux.kill="tmux kill-server"
 
+# EXPORT
+export EDITOR='vim'
+
+# SOURCE
+source ~/.bin/tmuxinator.zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
