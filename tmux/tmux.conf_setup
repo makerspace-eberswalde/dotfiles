@@ -55,8 +55,12 @@ unbind [
 bind Escape copy-mode
 unbind p
 bind p paste-buffer
-bind -t vi-copy 'v' begin-selection
-bind -t vi-copy 'y' copy-selection
+#bind -t vi-copy 'v' begin-selection
+#bind -t vi-copy 'y' copy-selection
+#bind-key -Tcopy-mode-vi 'v' send -X begin-selection
+#bind-key -Tcopy-mode-vi 'y' send -X copy-selection
+bind -Tcopy-mode-vi 'v' send -X begin-selection
+bind -Tcopy-mode-vi 'y' send -X copy-selection
 
 # Enable vi keys.
 setw -g mode-keys vi
