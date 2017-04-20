@@ -1,3 +1,6 @@
+" LEADER (change leader here"
+:let mapleader = ","
+
 " SOURCE OTHER FILES
 source $HOME/.vimrc_mappings
 source $HOME/.vimrc_plugins
