@@ -88,7 +88,8 @@ bind -n WheelUpPane   select-pane -t= \; copy-mode -e \; send-keys -M
 bind -n WheelDownPane select-pane -t= \;
 
 # https://coderwall.com/p/4b0d0a/how-to-copy-and-paste-with-tmux-on-ubuntu 
-bind -t vi-copy y copy-pipe "xclip -sel clip -i"
+#bind -t vi-copy y copy-pipe "xclip -sel clip -i"
+bind -Tcopy-mode-vi 'y' send -X copy-pipe "xclip -sel clip -i"
 
 # Smart pane switching with awareness of vim splits
 # See: https://github.com/christoomey/vim-tmux-navigator
@@ -107,12 +108,12 @@ set -g focus-events on
 #set -g window-active-style 'fg=colour250,bg=black'
 
 bind -n C-q copy-mode
-bind-key -t vi-copy o copy-selection
-bind-key -t vi-copy o copy-pipe "xclip -sel clip -i"
-bind-key -t vi-copy o copy-pipe "xargs -I{} tmux send-keys -t 1 ';call OpenTestFile(\"{}\")' Enter && tmux select-pane -t 1"
-#bind-key -t vi-copy o copy-pipe "xargs -I{} -L 10000 tmux send-keys -t 1 ';call OpenTestFile(\"{}\")' Enter && tmux select-pane -t 1"
-#bind-key -t vi-copy o copy-pipe "xargs -I{} tmux send-keys -t 1 ';call OpenTestFile(\"{}\")' Enter"
-#bind-key -t vi-copy o copy-pipe "tmux send-keys -t 1 ';call OpenTestFile(\"{}\")' Enter"
+#bind-key -t vi-copy o copy-selection
+bind-key -Tcopy-mode-vi 'o' send -X copy-selection
+#bind-key -t vi-copy o copy-pipe "xclip -sel clip -i"
+bind-key -Tcopy-mode-vi 'o' send -X copy-pipe "xclip -sel clip -i"
+#bind-key -t vi-copy o copy-pipe "xargs -I{} tmux send-keys -t 1 ';call OpenTestFile(\"{}\")' Enter && tmux select-pane -t 1"
+bind-key -Tcopy-mode-vi 'o' send -X copy-pipe "xargs -I{} tmux send-keys -t 1 ';call OpenTestFile(\"{}\")' Enter && tmux select-pane -t 1"
 
 # http://unix.stackexchange.com/questions/12032/create-new-window-with-current-directory-in-tmux
 bind - split-window -c "#{pane_current_path}"
