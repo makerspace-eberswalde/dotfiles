@@ -16,4 +16,4 @@ if [ -f ~/.zshrc ]; then
 fi
 
 # link zshrc
-ln -s $PWS/zshrc ~/.zshrc
+ln -s pwd/zshrc ~/.zshrc
