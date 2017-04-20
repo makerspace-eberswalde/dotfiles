@@ -1,0 +1,13 @@
+# ~/.tmuxinator/test.yml
+
+name: test
+root: ~/
+
+windows:
+   - editor:
+       layout: c9f8,190x41,0,0[190x20,0,0,190x20,0,21{95x20,0,21,94x20,96,21}]
+       panes:
+         - vim
+         - foo1
+         - foo2
+  - server: rails s
