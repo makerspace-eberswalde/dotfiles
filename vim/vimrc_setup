@@ -1,2 +1,8 @@
 " Pathogen
 execute pathogen#infect()
+
+" Mappings Insert Letters
+" ===========================================================================================
+" escape insert mode
+:inoremap jk <esc>
+:inoremap JK <esc>
