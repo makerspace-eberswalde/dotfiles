@@ -1,4 +1,5 @@
 # install tmux from source for older linux versions: https://ubuntuincident.wordpress.com/2016/03/17/upgrade-tmux-to-the-latest-version/
+# https://gist.github.com/P7h/91e14096374075f5316e
 #sudo apt-get update -yqqu
 sudo add-apt-repository -yu ppa:pi-rho/dev
 sudo apt-get update -yqqu
