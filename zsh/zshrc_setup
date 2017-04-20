@@ -1,2 +1,4 @@
 source ~/.zshrc_oh-my-zsh
 alias zshrc="vim ~/.zshrc"
+alias gitc="vim ~/.gitconfig"
+alias giti="vim ~/.gitignore"
