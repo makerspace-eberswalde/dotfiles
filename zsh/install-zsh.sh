@@ -7,11 +7,7 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # mv .zshrc to backup if existing
 mv ~/.zshrc ~/.zshrc_backup 2>/dev/null
-rm -f ~/.zshrc_oh-my-zsh 2>/dev/null
-
-# link oh-my-zsh 
-FILE_RC_OH=`pwd`/zshrc_oh-my-zsh
-ln -s $FILE_RC_OH ~/.zshrc_oh-my-zsh
+rm -f ~/.zshrc_setup 2>/dev/null
 
 # link zshrc_setup which sources zshrc_oh-my-zsh
 FILE_RC_SETUP=`pwd`/zshrc_setup
