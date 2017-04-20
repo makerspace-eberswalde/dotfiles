@@ -5,3 +5,5 @@ source $HOME/.vimrc_setup
 " :let mapleader = ","
 
 " INSERT YOUR STUFF HERE
+nnoremap ; :
+nnoremap : ;

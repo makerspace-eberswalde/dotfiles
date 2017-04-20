@@ -30,3 +30,12 @@ rm -rf ~/.vim/bundle/nerdtree
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 rm -rf ~/.vim/bundle/vim-tmux-navigator
 git clone https://github.com/christoomey/vim-tmux-navigator ~/.vim/bundle/vim-tmux-navigator
+rm -rf ~/.vim/bundle/vim-colors-solarized
+git clone https://github.com/altercation/vim-colors-solarized ~/.vim/bundle/vim-colors-solarized
+rm -rf ~/.vim/bundle/vim-nerdtree-syntax-highlight
+# FONTS FOR NERDTREE ICONS
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
+git clone https://github.com/tiagofumo/vim-nerdtree-syntax-highlight ~/.vim/bundle/vim-nerdtree-syntax-highlight
+rm -rf ~/.vim/bundle/vim-devicons
+git clone https://github.com/ryanoasis/vim-devicons ~/.vim/bundle/vim-devicons
