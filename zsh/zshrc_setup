@@ -8,7 +8,7 @@ alias gitignore="vim ~/.gitignore"
 alias vimrc="vim ~/.vimrc"
 alias vrc="vimrc"
 alias dotfiles="vim ~/.dotfiles/README.md -c ':NERDTreeFind'"
-alias dotf="dotf"
+alias dotf="dotfiles"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
