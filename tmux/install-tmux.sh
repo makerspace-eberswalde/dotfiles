@@ -4,6 +4,9 @@ sudo apt-get install tmux-next
 sudo rm -f /usr/bin/tmux
 sudo ln -s /usr/bin/tmux-next /usr/bin/tmux
 
+# vi-copy issue: https://github.com/tmux/tmux/issues/592
+
+
 # link tmux.conf_setup
 rm -f ~/.tmux.conf_setup 2>/dev/null
 FILE_CONFIG_SETUP=`pwd`/tmux.conf_setup
