@@ -10,7 +10,6 @@ fi
 if [ -f ~/.zshrc ]; then
   if [ -f ~/.zshrc_backup ]; then
     rm ~/.zshrc_backup
-    mv ~/.zshrc ~/.zshrc_backup
   fi
   mv ~/.zshrc ~/.zshrc_backup
 fi
