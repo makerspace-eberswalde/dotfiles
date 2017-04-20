@@ -8,9 +8,12 @@ fi
 
 # bakcup .zshrc to .zshrc_backup
 if [ -f ~/.zshrc ]; then
+  echo ".zshrc exists"
   if [ -f ~/.zshrc_backup ]; then
+    echo "create .zshrc backup"
     rm ~/.zshrc_backup
   fi
+  echo "mv file to backup"
   mv ~/.zshrc ~/.zshrc_backup
 fi
 
