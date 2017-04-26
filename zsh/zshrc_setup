@@ -9,6 +9,7 @@ alias giti="gitignore"
 alias gitignore="vim ~/.gitignore"
 alias vimrc="vim ~/.vimrc"
 alias vrc="vimrc"
+alias v="vim -c ':NERDTree'"
 alias dotfiles="vim ~/.dotfiles/README.md -c ':NERDTreeFind'"
 alias dotf="dotfiles"
 alias dotf.goto="dotfiles.goto"
@@ -22,8 +23,11 @@ alias makerspace.goto="cd ~/code/makerspace-eberswalde && ls -lisa"
 alias makerspace.github="firefox https://github.com/makerspace-eberswalde"
 alias ms.goto="makerspace.goto"
 alias tftp.tftpboot="cd /var/lib/tftpboot && ls -lisa"
+alias tftp.distros="cd /var/lib/tftpboot/distros && ls -lisa"
 alias tftp.dnsmasq="sudo vim /etc/dnsmasq.conf"
 alias tftp.syslinux="cd /usr/lib/syslinux"
+alias tftp.start.preseed-http-server="cd /var/lib/tftpboot/preseeds && http-server"
+
 # EXPORT
 export EDITOR='vim'
 
