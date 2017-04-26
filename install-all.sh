@@ -1,3 +1,4 @@
+rm -rf ~/.dotfiles
 git clone https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
 
 # tmux
