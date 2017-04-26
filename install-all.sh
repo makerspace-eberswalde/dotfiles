@@ -1,5 +1,9 @@
+# 
 rm -rf ~/.dotfiles
 git clone https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
+
+# create code folder
+mkdir -p ~/code/test
 
 # TODO: change owner of ~/.bin
 sudo chown -R $USER ~/.bin

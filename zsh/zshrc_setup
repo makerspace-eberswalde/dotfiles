@@ -31,6 +31,8 @@ alias tftp.syslinux="cd /usr/lib/syslinux"
 alias tftp.start.preseed-http-server="cd /var/lib/tftpboot/preseeds && http-server"
 alias lisa="ls -lisa"
 alias mux="tmuxinator start"
+alias test="cd ~/code/test && lisa"
+alias code="cd ~/code && lisa"
 
 # EXPORT
 export EDITOR='vim'
