@@ -24,6 +24,7 @@ sudo gem install tmuxinator
 mkdir ~/.bin
 wget -P ~/.bin https://github.com/tmuxinator/tmuxinator/blob/master/completion/tmuxinator.zsh
 mkdir ~/.tmuxinator 2>/dev/null
+rm -rf ~/.tmuxinator/backup 2>/dev/null
 mkdir ~/.tmuxinator/backup 2>/dev/null
 mv ~/.tmuxinator/*.yml ~/.tmuxinator/backup 2>/dev/null
 ln -s ~/.dotfiles/tmux/tmuxinator/* ~/.tmuxinator

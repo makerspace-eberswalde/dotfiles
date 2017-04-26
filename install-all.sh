@@ -1,6 +1,9 @@
 rm -rf ~/.dotfiles
 git clone https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
 
+# TODO: change owner of ~/.bin
+sudo chown -R $USER ~/.bin
+
 # tmux
 cd ~/.dotfiles/tmux
 sh install-tmux.sh
