@@ -1,13 +1,13 @@
 # install tmux from source for older linux versions: https://ubuntuincident.wordpress.com/2016/03/17/upgrade-tmux-to-the-latest-version/
 # tmux_install.sh https://gist.github.com/P7h/91e14096374075f5316e
-# sudo apt-get install tmux-next
-# sudo rm -f /usr/bin/tmux
-# sudo ln -s /usr/bin/tmux-next /usr/bin/tmux
-sudo apt-get update -yqqu
-sudo apt-get install -yqqu python-software-properties software-properties-common
-sudo add-apt-repository -yu ppa:pi-rho/dev
-sudo apt-get update -yqqu
-sudo apt-get install -yqqu tmux
+sudo apt-get install tmux-next=2.3~20170425~bzr3813+20-1ubuntu1~ppa0~ubuntu14.04.1 
+sudo rm -f /usr/bin/tmux
+sudo ln -s /usr/bin/tmux-next /usr/bin/tmux
+# sudo apt-get update -yqqu
+# sudo apt-get install -yqqu python-software-properties software-properties-common
+# sudo add-apt-repository -yu ppa:pi-rho/dev
+# sudo apt-get update -yqqu
+# sudo apt-get install -yqqu tmux
 
 # vi-copy issue: https://github.com/tmux/tmux/issues/592
 
