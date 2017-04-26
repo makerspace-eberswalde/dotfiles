@@ -1,6 +1,8 @@
 # DO NOT CHANGE THIS FILE!!!!! --> CHANGE YOUR ALIASES IN .zshrc
 alias zshrc="vim ~/.zshrc"
 alias zrc="zshrc"
+alias zshrc_setup="vim ~/.dotfiles/zsh/zshrc_setup"
+alias zrcs="zshrc_setup"
 alias gitc="gitconfig"
 alias gitconfig="vim ~/.gitconfig"
 alias giti="gitignore"
@@ -16,7 +18,12 @@ alias tmux.conf="vim ~/.tmux.conf"
 alias tk="tmux.kill"
 alias tmux.kill="tmux kill-server"
 alias tmux="TERM=screen-256color-bce tmux"
-
+alias makerspace.goto="cd ~/code/makerspace-eberswalde && ls -lisa"
+alias makerspace.github="firefox https://github.com/makerspace-eberswalde"
+alias ms.goto="makerspace.goto"
+alias tftp.tftpboot="cd /var/lib/tftpboot && ls -lisa"
+alias tftp.dnsmasq="sudo vim /etc/dnsmasq.conf"
+alias tftp.syslinux="cd /usr/lib/syslinux"
 # EXPORT
 export EDITOR='vim'
 
