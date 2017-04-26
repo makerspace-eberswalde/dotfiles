@@ -28,6 +28,7 @@ alias tftp.dnsmasq="sudo vim /etc/dnsmasq.conf"
 alias tftp.syslinux="cd /usr/lib/syslinux"
 alias tftp.start.preseed-http-server="cd /var/lib/tftpboot/preseeds && http-server"
 alias lisa="ls -lisa"
+alias mux="tmuxinator start"
 
 # EXPORT
 export EDITOR='vim'

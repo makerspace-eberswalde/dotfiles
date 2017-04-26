@@ -18,5 +18,3 @@ ln -s $FILE_RC_SETUP ~/.zshrc_setup
 FILE_RC=`pwd`/zshrc
 cp $FILE_RC ~/.zshrc
 
-# change default shell to zsh
-chsh -s /bin/zsh
