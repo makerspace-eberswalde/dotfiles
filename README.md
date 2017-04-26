@@ -1,7 +1,7 @@
 # install
     
     ```bash
-    wget -O - https://raw.githubusercontent.com/makerspace-eberswalde/dotfiles/master/install-all.sh | sudo bash
+    wget -O - https://raw.githubusercontent.com/makerspace-eberswalde/dotfiles/master/install-all.sh | bash
     ```
 
 # dotfiles
