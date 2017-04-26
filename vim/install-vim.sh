@@ -1,5 +1,5 @@
 # INSTALL VIM
-sudo apt-get install vim
+sudo apt-get install -y vim
 
 # PATHOGEN
 mkdir -p ~/.vim/autoload ~/.vim/bundle
