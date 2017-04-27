@@ -65,10 +65,16 @@ echo "\nTMUXINATOR"
 echo "==========\n"
 sudo apt-get install ruby gem
 sudo gem install tmuxinator
+echo "\nTMUXINATOR: tmuxinator.zsh"
+echo "===================================\n"
 mkdir ~/.bin
 wget -P ~/.bin https://github.com/tmuxinator/tmuxinator/blob/master/completion/tmuxinator.zsh
 mkdir ~/.tmuxinator 2>/dev/null
+echo "\nTMUXINATOR: link .tmuxinator/backup"
+echo "===================================\n"
 rm -rf ~/.tmuxinator/backup 2>/dev/null
 mkdir ~/.tmuxinator/backup 2>/dev/null
 mv ~/.tmuxinator/*.yml ~/.tmuxinator/backup 2>/dev/null
+echo "\nTMUXINATOR: link .tmuxinator"
+echo "============================\n"
 ln -s ~/.dotfiles/tmux/tmuxinator/* ~/.tmuxinator

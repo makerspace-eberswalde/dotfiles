@@ -6,6 +6,7 @@ git clone https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
 mkdir -p ~/code/test
 
 # TODO: change owner of ~/.bin
+mkdir -p ~/.bin
 sudo chown -R $USER ~/.bin
 
 # tmux
