@@ -1,3 +1,6 @@
+echo "\NINSTALL VIM"
+echo "===================================\n"
+
 # INSTALL VIM
 sudo apt-get install -y vim
 

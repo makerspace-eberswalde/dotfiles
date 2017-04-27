@@ -1,5 +1,5 @@
 # INSTALL HELPER FOR DIFFERENT TMUX-NEXT VERSIONs
-echo "\nTMUX: tmux-next"
+echo "\nINSTALL TMUX: tmux-next"
 echo "=====================\n"
 rm -rf ~/tmp/tmux
 mkdir -p ~/tmp/tmux
@@ -46,7 +46,7 @@ cd -
 
 # link tmux.conf_setup
 echo "\nTMUX: tmux.conf_setup"
-echo "=====================\n"
+echo "---------------------\n"
 rm -f ~/.tmux.conf_setup 2>/dev/null
 FILE_CONFIG_SETUP=`pwd`/tmux.conf_setup
 ln -s $FILE_CONFIG_SETUP ~/.tmux.conf_setup
@@ -54,7 +54,7 @@ ln -s $FILE_CONFIG_SETUP ~/.tmux.conf_setup
 # cp tmux.conf which sources tmux.conf_setup
 # write your own aliases here
 echo "\nTMUX: tmux.conf"
-echo "===============\n"
+echo "---------------\n"
 rm -f ~/.tmux.conf 2>/dev/null
 FILE_CONF=`pwd`/tmux.conf
 cp $FILE_CONF ~/.tmux.conf
@@ -62,20 +62,20 @@ cp $FILE_CONF ~/.tmux.conf
 # TMUXINATOR: https://github.com/tmuxinator/tmuxinator
 # https://www.cyberciti.biz/faq/debian-ubuntu-install-gem-the-frontend-to-rubygems/
 echo "\nTMUXINATOR"
-echo "==========\n"
+echo "----------\n"
 sudo apt-get install -y ruby
 sudo apt-get install -y gem
 sudo gem install tmuxinator
 echo "\nTMUXINATOR: tmuxinator.zsh"
-echo "===================================\n"
+echo "--------------------------\n"
 mkdir ~/.bin
 wget -P ~/.bin https://github.com/tmuxinator/tmuxinator/blob/master/completion/tmuxinator.zsh
 mkdir ~/.tmuxinator 2>/dev/null
 echo "\nTMUXINATOR: link .tmuxinator/backup"
-echo "===================================\n"
+echo "-----------------------------------\n"
 rm -rf ~/.tmuxinator/backup 2>/dev/null
 mkdir ~/.tmuxinator/backup 2>/dev/null
 mv ~/.tmuxinator/*.yml ~/.tmuxinator/backup 2>/dev/null
 echo "\nTMUXINATOR: link .tmuxinator"
-echo "============================\n"
-ln -s ~/.dotfiles/tmux/tmuxinator/* ~/.tmuxinator
+echo "----------------------------\n"
+ln -s ~/.dotfiles/cli/tmux/tmuxinator/* ~/.tmuxinator

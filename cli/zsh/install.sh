@@ -1,5 +1,8 @@
+echo "\NINSTALL ZSH"
+echo "===================================\n"
+
 # install zsh
-sudo apt-get install zsh
+sudo apt-get install -y zsh
 
 # install oh-my-zsh: https://github.com/robbyrussell/oh-my-zsh
 rm -rf ~/.oh-my-zsh
@@ -17,4 +20,3 @@ ln -s $FILE_RC_SETUP ~/.zshrc_setup
 # write your own aliases here
 FILE_RC=`pwd`/zshrc
 cp $FILE_RC ~/.zshrc
-

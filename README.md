@@ -1,7 +1,13 @@
-# install
+# install cli tools
     
     ```bash
-    wget -O - https://raw.githubusercontent.com/makerspace-eberswalde/dotfiles/master/install-all.sh | bash
+    wget -O - https://raw.githubusercontent.com/makerspace-eberswalde/dotfiles/master/install-terminal.sh | bash
+    ```
+
+# install gui tools
+    
+    ```bash
+    wget -O - https://raw.githubusercontent.com/makerspace-eberswalde/dotfiles/master/install-gui.sh | bash
     ```
 
 # dotfiles

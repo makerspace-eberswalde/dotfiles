@@ -1,3 +1,6 @@
+echo "\NINSTALL GIT"
+echo "===================================\n"
+
 # TODO: create backups
 # TODO: source file for beeing able to have own things: http://stackoverflow.com/questions/1557183/is-it-possible-to-include-a-file-in-your-gitconfig
 
