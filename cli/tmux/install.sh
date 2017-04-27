@@ -1,43 +1,40 @@
 # INSTALL HELPER FOR DIFFERENT TMUX-NEXT VERSIONs
 echo "\nINSTALL TMUX: tmux-next"
 echo "=====================\n"
-rm -rf ~/tmp/tmux
-mkdir -p ~/tmp/tmux
-cd ~/tmp/tmux
 MACHINE_TYPE=`uname -m`
 if [ ${MACHINE_TYPE} = 'x86_64' ]; then
   # 64-bit stuff here
-UBUNTU_VERSION=`lsb_release -rs`
-if [ $UBUNTU_VERSION = "12.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-12.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu12.04.1_amd64.deb
-elif [ $UBUNTU_VERSION = "14.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-14.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu14.04.1_amd64.deb
-elif [ $UBUNTU_VERSION = "15.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu15.04.1_amd64.deb
-elif [ $UBUNTU_VERSION = "15.10" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.10/tmux-next_2.3~20161212~bzr3632+20-1ubuntu1~ppa0~ubuntu15.10.1_amd64.deb
-elif [ $UBUNTU_VERSION = "16.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-16.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu16.04.1_amd64.deb
-fi
+  UBUNTU_VERSION=`lsb_release -rs`
+  if [ $UBUNTU_VERSION = "12.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-12.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu12.04.1_amd64.deb
+  elif [ $UBUNTU_VERSION = "14.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-14.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu14.04.1_amd64.deb
+  elif [ $UBUNTU_VERSION = "15.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu15.04.1_amd64.deb
+  elif [ $UBUNTU_VERSION = "15.10" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.10/tmux-next_2.3~20161212~bzr3632+20-1ubuntu1~ppa0~ubuntu15.10.1_amd64.deb
+  elif [ $UBUNTU_VERSION = "16.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-16.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu16.04.1_amd64.deb
+  fi
 else
   # 32-bit stuff here
   echo 32-bit
-if [ $UBUNTU_VERSION = "12.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-12.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu12.04.1_i386.deb
-elif [ $UBUNTU_VERSION = "14.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-14.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu14.04.1_i386.deb
-elif [ $UBUNTU_VERSION = "15.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu15.04.1_i386.deb
-elif [ $UBUNTU_VERSION = "15.10" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.10/tmux-next_2.3~20161212~bzr3632+20-1ubuntu1~ppa0~ubuntu15.10.1_i386.deb
-elif [ $UBUNTU_VERSION = "16.04" ]; then
-	wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-16.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu16.04.1_i386.deb
-fi
+  if [ $UBUNTU_VERSION = "12.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-12.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu12.04.1_i386.deb
+  elif [ $UBUNTU_VERSION = "14.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-14.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu14.04.1_i386.deb
+  elif [ $UBUNTU_VERSION = "15.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu15.04.1_i386.deb
+  elif [ $UBUNTU_VERSION = "15.10" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-15.10/tmux-next_2.3~20161212~bzr3632+20-1ubuntu1~ppa0~ubuntu15.10.1_i386.deb
+  elif [ $UBUNTU_VERSION = "16.04" ]; then
+    wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-16.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu16.04.1_i386.deb
+  fi
 fi
 if [ -f "tmux-next-ubuntu.deb" ]; then
-	sudo dpkg -i tmux-next-ubuntu.deb
+  sudo dpkg -i tmux-next-ubuntu.deb
+  rm tmux-next-ubuntu.deb
 fi
-rm -rf ~/tmp/tmux
 sudo rm -f /usr/bin/tmux
 sudo ln -s /usr/bin/tmux-next /usr/bin/tmux
 cd -
