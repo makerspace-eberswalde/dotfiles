@@ -1,3 +1,6 @@
 " escape insert mode
 :inoremap jk <esc>
 :inoremap JK <esc>
+
+" Buffer switch back (go to alternate file)
+nnoremap <leader>x :e #<cr>
