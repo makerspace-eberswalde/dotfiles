@@ -35,7 +35,7 @@ cd ~/.dotfiles/cli/vim
 sh install.sh
 
 # [CHSH]
-sudo chsh -s /bin/zsh mkrspcebw
+#sudo chsh -s /bin/zsh mkrspcebw
 
 # restart
 # sudo shutdown -r now
