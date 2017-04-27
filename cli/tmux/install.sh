@@ -37,8 +37,6 @@ if [ -f "tmux-next-ubuntu.deb" ]; then
 fi
 sudo rm -f /usr/bin/tmux
 sudo ln -s /usr/bin/tmux-next /usr/bin/tmux
-cd -
-
 # vi-copy issue: https://github.com/tmux/tmux/issues/592
 
 # link tmux.conf_setup
