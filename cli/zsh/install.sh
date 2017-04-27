@@ -2,11 +2,11 @@ echo "\nINSTALL ZSH"
 echo "===================================\n"
 
 # install zsh
-sudo apt-get install -y zsh
+sudo apt-get install -y zsh;
 
 # install oh-my-zsh: https://github.com/robbyrussell/oh-my-zsh
-rm -rf ~/.oh-my-zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+rm -rf ~/.oh-my-zsh;
+git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh;
 
 # mv .zshrc to backup if existing
 mv ~/.zshrc ~/.zshrc_backup 2>/dev/null
