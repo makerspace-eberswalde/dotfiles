@@ -1,7 +1,7 @@
 # DO NOT CHANGE THIS FILE!!!!! --> CHANGE YOUR ALIASES IN .zshrc
 # ==============================================================
 # CODE
-# alias test="cd ~/code/test && lisa"
+alias tes="cd ~/code/test && lisa"
 alias code="cd ~/code && lisa"
 # GIT
 alias gitc="gitconfig"
