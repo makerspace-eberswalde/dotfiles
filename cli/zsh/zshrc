@@ -1,4 +1,5 @@
 # DO NOT REMOVE THIS LINE. IF YOU DO IT, YOU CANT USE THE PREDEFINED ALIASES AND OH-MY-ZSH
 source ~/.zshrc_setup
+source ~/.zshrc_functions
 
 # ADD YOUR STUFF HERE

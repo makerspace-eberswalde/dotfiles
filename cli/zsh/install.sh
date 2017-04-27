@@ -16,6 +16,10 @@ rm -f ~/.zshrc_setup 2>/dev/null;
 FILE_RC_SETUP=`pwd`/zshrc_setup;
 ln -s $FILE_RC_SETUP ~/.zshrc_setup;
 
+# link zshrc_setup which sources zshrc_oh-my-zsh
+FILE_RC_FUNCTIONS=`pwd`/zshrc_functions;
+ln -s $FILE_RC_FUNCTIONS ~/.zshrc_functions;
+
 # cp zshrc which sources zshrc_setup
 # write your own aliases here
 FILE_RC=`pwd`/zshrc;
