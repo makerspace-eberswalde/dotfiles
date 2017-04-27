@@ -27,7 +27,7 @@ cd ~/.dotfiles/cli/zsh
 sh install.sh;
 
 # [INSTALL] nodejs
-#cd ~/.dotfiles/cli/nodejs
+cd ~/.dotfiles/cli/nodejs
 sh install.sh;
 
 # [INSTALL] vim
