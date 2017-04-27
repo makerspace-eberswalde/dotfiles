@@ -19,4 +19,4 @@ ln -s $FILE_RC_SETUP ~/.zshrc_setup
 # cp zshrc which sources zshrc_setup
 # write your own aliases here
 FILE_RC=`pwd`/zshrc
-cp $FILE_RC ~/.zshrc
+cp -f $FILE_RC ~/.zshrc

@@ -1,4 +1,4 @@
-echo "\NINSTALL GIT"
+echo "\nINSTALL GIT"
 echo "===================================\n"
 
 # TODO: create backups
