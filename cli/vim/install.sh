@@ -50,10 +50,10 @@ rm -rf ~/.vim/bundle/vim-devicons
 git clone https://github.com/ryanoasis/vim-devicons ~/.vim/bundle/vim-devicons
 # ctrlp
 rm -rf ~/.vim/bundle/ctrlp
-git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
+git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp
 # surround
 rm -rf ~/.vim/bundle/vim-surround
-git clone https://github.com/tpope/vim-surround.git
+git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
 # SNIPPETS
 rm -rf ~/.vim/bundle/tlib-vim
 git clone https://github.com/tomtom/tlib_vim.git ~/.vim/bundle/tlib-vim
