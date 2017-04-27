@@ -5,6 +5,10 @@ mkdir -p ~/.bin
 # [CHOWN]
 sudo chown -R $USER ~/.bin
 
+# [CLONE] dotfiles
+rm -rf ~/.dotfiles
+git clone https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
+
 # [INSTALL] git
 cd ~/.dotfiles/cli/git
 sh install.sh
@@ -13,10 +17,6 @@ sh install.sh
 sudo apt-get install -y curl
 sudo apt-get install -y wget
 sudo apt-get install -y htop 
-
-# [CLONE] dotfiles
-rm -rf ~/.dotfiles
-git clone https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
 
 # [INSTALL] tmux
 cd ~/.dotfiles/cli/tmux
