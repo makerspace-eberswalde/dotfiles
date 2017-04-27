@@ -1,7 +1,7 @@
 # install cli tools
     
     ```bash
-    wget -O - https://raw.githubusercontent.com/makerspace-eberswalde/dotfiles/master/install-terminal.sh | bash
+    wget -O - https://raw.githubusercontent.com/makerspace-eberswalde/dotfiles/master/install-cli.sh | bash
     ```
 
 # install gui tools
