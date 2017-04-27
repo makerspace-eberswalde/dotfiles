@@ -14,6 +14,7 @@ cd ~/.dotfiles/cli/git;
 sh install.sh;
 
 # [INSTALL] oneliner
+sudo apt-get update;
 sudo apt-get install -y curl;
 sudo apt-get install -y wget;
 sudo apt-get install -y htop;
