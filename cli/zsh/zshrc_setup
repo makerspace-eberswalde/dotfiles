@@ -26,6 +26,8 @@ alias makerspace.knowledge.github="firefox https://github.com/makerspace-eberswa
 alias makerspace.workshopraum.github="firefox https://github.com/makerspace-eberswalde/workshopraum"
 alias makerspace.dotfiles.github="firefox https://github.com/makerspace-eberswalde/dotfiles"
 alias ms.goto="makerspace.goto"
+# SHUTDOWN
+alias sh="sudo shutdown now"
 # TFTP
 alias tftp.tftpboot="cd /var/lib/tftpboot && ls -lisa"
 alias tftp.distros="cd /var/lib/tftpboot/distros && ls -lisa"
@@ -48,6 +50,8 @@ alias zshrc="vim ~/.zshrc"
 alias zrc="zshrc"
 alias zshrc_setup="vim ~/.zshrc_setup"
 alias zrcs="zshrc_setup"
+alias zshrc_functions="vim ~/.zshrc_functions"
+alias zrcf="zshrc_functions"
 # MISC
 alias lisa="ls -lisa"
 
