@@ -23,3 +23,33 @@ nnoremap <silent> <m-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <m-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <m-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <m-6> :TmuxNavigatePrevious<cr>
+
+"CTRLP
+" =======================================================
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/node_modules/*,*.so,*.swp,*.zip,*/dist/*,*/build/*
+let g:ctrlp_map = '<leader><leader>'
+map <leader>cpm :CtrlPMixed<cr>
+nnoremap <leader><leader><leader>b :CtrlPBuffer<cr>
+
+" Snipmate
+" =======================================================
+set omnifunc=syntaxcomplete#Complete
+
+" NERDTree show icons and color them
+" =======================================================
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+set encoding=utf-8
+let g:airline_powerline_fonts = 1
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:webdevicons_conceal_nerdtree_brackets = 0
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
+let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
+autocmd FileType nerdtree setlocal nolist

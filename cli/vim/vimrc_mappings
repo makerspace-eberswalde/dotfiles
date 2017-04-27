@@ -3,4 +3,27 @@
 :inoremap JK <esc>
 
 " Buffer switch back (go to alternate file)
-nnoremap <leader>x :e #<cr>
+:nnoremap <leader>x :e #<cr>
+
+" duplicate line
+:inoremap <c-d> <esc>yypi
+:nnoremap <c-d> yyp
+
+" move cursor faster
+" http://vi.stackexchange.com/questions/2350/how-to-map-alt-key
+:nnoremap <c-h> 6h
+:nnoremap <c-l> 6l
+:nnoremap <c-k> 6k
+:nnoremap <c-j> 6j
+:inoremap <c-h> <esc>hhhhhhi
+:inoremap <c-l> <esc>llllllli
+:inoremap <c-k> <esc>kkkkkkli
+:inoremap <c-j> <esc>jjjjjjli
+:inoremap <c-b> <esc>I
+:inoremap <c-e> <esc>A
+
+" quickfix (close/open)
+" http://stackoverflow.com/questions/3262037/how-to-quit-vim-quickfix
+:nnoremap <leader>qq :cclose<cr>
+:nnoremap <leader>qo :copen<cr>
+:map <leader>q :ccl<cr>

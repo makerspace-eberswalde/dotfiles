@@ -1,12 +1,20 @@
 " PATHOGEN
 execute pathogen#infect()
 
-" LEADER (change leader here"
+" use system clippboard
+set clipboard+=unnamed
+
+
+" LEADER (do not change leader here)
 :let mapleader = ","
+
+" AUTOSAVE
+augroup AutoWrite
+  autocmd! BufLeave * :update
+augroup END
+set autowriteall
+set autowrite
 
 " SOURCE OTHER FILES
 source $HOME/.vimrc_mappings
 source $HOME/.vimrc_plugins
-
-
-

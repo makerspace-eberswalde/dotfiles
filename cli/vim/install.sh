@@ -48,6 +48,21 @@ git clone https://github.com/tiagofumo/vim-nerdtree-syntax-highlight ~/.vim/bund
 # vim-devicons
 rm -rf ~/.vim/bundle/vim-devicons
 git clone https://github.com/ryanoasis/vim-devicons ~/.vim/bundle/vim-devicons
+# ctrlp
+rm -rf ~/.vim/bundle/ctrlp
+git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
+# surround
+rm -rf ~/.vim/bundle/vim-surround
+git clone https://github.com/tpope/vim-surround.git
+# SNIPPETS
+rm -rf ~/.vim/bundle/tlib-vim
+git clone https://github.com/tomtom/tlib_vim.git ~/.vim/bundle/tlib-vim
+rm -rf ~/.vim/bundle/vim-addon-mw-utils.git
+git clone https://github.com/MarcWeber/vim-addon-mw-utils.git ~/.vim/bundle/vim-addon-mw-utils.git
+rm -rf ~/.vim/bundle/vim-snipmate.git
+git clone https://github.com/garbas/vim-snipmate.git ~/.vim/bundle/vim-snipmate.git
+rm -rf ~/.vim/bundle/vim-snippets.git
+git clone https://github.com/honza/vim-snippets.git ~/.vim/bundle/vim-snippets.git
 
 # FONTS
 # =============================================================================
