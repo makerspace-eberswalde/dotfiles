@@ -27,3 +27,8 @@
 :nnoremap <leader>qq :cclose<cr>
 :nnoremap <leader>qo :copen<cr>
 :map <leader>q :ccl<cr>
+
+" Search Abbreviations: http://vimregex.com/
+noremap ;; :,$s/\v/cg<Left><Left><Left>
+noremap ;;; :%s::cg<Left><Left><Left>
+noremap ;' :%s::g<Left><Left><Left><Left>
