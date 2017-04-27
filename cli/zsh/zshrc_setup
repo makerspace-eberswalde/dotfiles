@@ -16,6 +16,8 @@ alias dotfiles="cd ~/.dotfiles && ls -lisa"
 alias dotfiles.git-push="cd ~/.dotfiles && git up && cd -"
 alias dotfiles.git-pull="cd ~/.dotfiles && git pull origin master && zsh && cd -"
 alias dotf.update="dotfiles.update"
+# Downloads
+alias dow="cd ~/Downloads && ls -lisa"
 # MAKERSPACE
 alias makerspace.goto="cd ~/code/makerspace-eberswalde && ls -lisa"
 alias makerspace.github="firefox https://github.com/makerspace-eberswalde"
