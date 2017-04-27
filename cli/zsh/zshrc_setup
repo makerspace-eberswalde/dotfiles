@@ -44,7 +44,7 @@ alias v="vim -c ':NERDTree'"
 # ZSH
 alias zshrc="vim ~/.zshrc"
 alias zrc="zshrc"
-alias zshrc_setup="vim ~/.dotfiles/zsh/zshrc_setup"
+alias zshrc_setup="vim ~/.zshrc_setup"
 alias zrcs="zshrc_setup"
 # MISC
 alias lisa="ls -lisa"
