@@ -1,5 +1,5 @@
 # change default shell to zsh
-chsh -s /bin/zsh
+sudo chsh -s /bin/zsh mkrspcebw
 
 # restart
 sudo shutdown -r now
