@@ -1,4 +1,6 @@
 # INSTALL HELPER FOR DIFFERENT TMUX-NEXT VERSIONs
+echo "\nTMUX: tmux-next"
+echo "=====================\n"
 rm -rf ~/tmp/tmux
 mkdir -p ~/tmp/tmux
 cd ~/tmp/tmux
@@ -43,18 +45,24 @@ cd -
 # vi-copy issue: https://github.com/tmux/tmux/issues/592
 
 # link tmux.conf_setup
+echo "\nTMUX: tmux.conf_setup"
+echo "=====================\n"
 rm -f ~/.tmux.conf_setup 2>/dev/null
 FILE_CONFIG_SETUP=`pwd`/tmux.conf_setup
 ln -s $FILE_CONFIG_SETUP ~/.tmux.conf_setup
 
 # cp tmux.conf which sources tmux.conf_setup
 # write your own aliases here
+echo "\nTMUX: tmux.conf"
+echo "===============\n"
 rm -f ~/.tmux.conf 2>/dev/null
 FILE_CONF=`pwd`/tmux.conf
 cp $FILE_CONF ~/.tmux.conf
 
 # TMUXINATOR: https://github.com/tmuxinator/tmuxinator
 # https://www.cyberciti.biz/faq/debian-ubuntu-install-gem-the-frontend-to-rubygems/
+echo "\nTMUXINATOR"
+echo "==========\n"
 sudo apt-get install ruby gem
 sudo gem install tmuxinator
 mkdir ~/.bin
