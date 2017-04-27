@@ -17,8 +17,8 @@ sh install.sh;
 sudo apt-get install -y curl;
 sudo apt-get install -y wget;
 sudo apt-get install -y htop;
-sudo apt-get install -Y build-dep;
-sudo apt-get install -Y build-essential;
+sudo apt-get install -y build-dep;
+sudo apt-get install -y build-essential;
 
 # [INSTALL] tmux
 cd ~/.dotfiles/cli/tmux;
