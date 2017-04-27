@@ -38,4 +38,4 @@ sh install.sh
 sudo chsh -s /bin/zsh mkrspcebw
 
 # restart
-sudo shutdown -r now
+# sudo shutdown -r now
