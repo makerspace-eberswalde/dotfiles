@@ -1,4 +1,4 @@
-echo "\NINSTALL VIM"
+echo "\nINSTALL VIM"
 echo "===================================\n"
 
 # INSTALL VIM

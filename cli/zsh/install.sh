@@ -1,4 +1,4 @@
-echo "\NINSTALL ZSH"
+echo "\nINSTALL ZSH"
 echo "===================================\n"
 
 # install zsh
