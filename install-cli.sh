@@ -7,7 +7,7 @@ sudo chown -R $USER ~/.bin
 
 # [CLONE] dotfiles
 rm -rf ~/.dotfiles
-git clone https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
+git clone --depth=1 https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
 
 # [INSTALL] git
 cd ~/.dotfiles/cli/git
