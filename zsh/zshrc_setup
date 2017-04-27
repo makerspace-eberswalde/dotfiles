@@ -1,15 +1,14 @@
 # DO NOT CHANGE THIS FILE!!!!! --> CHANGE YOUR ALIASES IN .zshrc
-alias zshrc="vim ~/.zshrc"
-alias zrc="zshrc"
-alias zshrc_setup="vim ~/.dotfiles/zsh/zshrc_setup"
-alias zrcs="zshrc_setup"
+# ==============================================================
+# CODE
+# alias test="cd ~/code/test && lisa"
+alias code="cd ~/code && lisa"
+# GIT
 alias gitc="gitconfig"
 alias gitconfig="vim ~/.gitconfig"
 alias giti="gitignore"
 alias gitignore="vim ~/.gitignore"
-alias vimrc="vim ~/.vimrc"
-alias vrc="vimrc"
-alias v="vim -c ':NERDTree'"
+# DOTFILES
 alias dotfiles.goto="vim ~/.dotfiles/README.md -c ':NERDTreeFind'"
 alias dotf.goto="dotfiles"
 alias dotf="dotfiles"
@@ -17,23 +16,38 @@ alias dotfiles="cd ~/.dotfiles && ls -lisa"
 alias dotfiles.git-push="cd ~/.dotfiles && git up"
 alias dotfiles.git-pull="cd ~/.dotfiles && git pull origin master && zsh"
 alias dotf.update="dotfiles.update"
-alias tmuxc="tmuxconf"
-alias tmux.conf="vim ~/.tmux.conf"
-alias tk="tmux.kill"
-alias tmux.kill="tmux kill-server"
-alias tmux="TERM=screen-256color-bce tmux"
+# MAKERSPACE
 alias makerspace.goto="cd ~/code/makerspace-eberswalde && ls -lisa"
 alias makerspace.github="firefox https://github.com/makerspace-eberswalde"
+alias makerspace.installer.github="firefox https://github.com/makerspace-eberswalde/installer"
+alias makerspace.knowledge.github="firefox https://github.com/makerspace-eberswalde/knowledge"
+alias makerspace.workshopraum.github="firefox https://github.com/makerspace-eberswalde/workshopraum"
+alias makerspace.dotfiles.github="firefox https://github.com/makerspace-eberswalde/dotfiles"
 alias ms.goto="makerspace.goto"
+# TFTP
 alias tftp.tftpboot="cd /var/lib/tftpboot && ls -lisa"
 alias tftp.distros="cd /var/lib/tftpboot/distros && ls -lisa"
 alias tftp.dnsmasq="sudo vim /etc/dnsmasq.conf"
 alias tftp.syslinux="cd /usr/lib/syslinux"
 alias tftp.start.preseed-http-server="cd /var/lib/tftpboot/preseeds && http-server"
-alias lisa="ls -lisa"
+# TMUX
 alias mux="tmuxinator start"
-alias test="cd ~/code/test && lisa"
-alias code="cd ~/code && lisa"
+alias tmuxc="tmuxconf"
+alias tmux.conf="vim ~/.tmux.conf"
+alias tk="tmux.kill"
+alias tmux.kill="tmux kill-server"
+alias tmux="TERM=screen-256color-bce tmux"
+# VIM
+alias vimrc="vim ~/.vimrc"
+alias vrc="vimrc"
+alias v="vim -c ':NERDTree'"
+# ZSH
+alias zshrc="vim ~/.zshrc"
+alias zrc="zshrc"
+alias zshrc_setup="vim ~/.dotfiles/zsh/zshrc_setup"
+alias zrcs="zshrc_setup"
+# MISC
+alias lisa="ls -lisa"
 
 # EXPORT
 export EDITOR='vim'
