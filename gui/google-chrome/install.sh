@@ -1,3 +1,5 @@
+echo "\nINSTALL GOOGLE-CHROME"
+echo "===================================\n"
 sudo apt-get install -y libxss1
 sudo apt-get install -y libappindicator1
 sudo apt-get install -y libindicator7
