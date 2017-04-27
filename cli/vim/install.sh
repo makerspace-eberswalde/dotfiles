@@ -2,7 +2,7 @@ echo "\nINSTALL VIM"
 echo "===================================\n"
 
 # INSTALL VIM
-sudo apt-get install -y vim;
+sudo apt-get install --yes --force-yes vim-gnome;
 
 # PATHOGEN
 mkdir -p ~/.vim/autoload ~/.vim/bundle;
