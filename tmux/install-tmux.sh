@@ -1,6 +1,6 @@
 # INSTALL HELPER FOR DIFFERENT TMUX-NEXT VERSIONs
 rm -rf ~/tmp/tmux
-mkdir ~/tmp/tmux
+mkdir -p ~/tmp/tmux
 cd ~/tmp/tmux
 MACHINE_TYPE=`uname -m`
 if [ ${MACHINE_TYPE} = 'x86_64' ]; then
