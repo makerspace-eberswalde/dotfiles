@@ -43,5 +43,8 @@ sh install.sh &&
 # [CHSH]
 chsh -s /bin/zsh &&
 
+# [MESSAGE]
+echo "CLI Installation successful!"
+
 # restart
 #sudo shutdown -r now

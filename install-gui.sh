@@ -11,4 +11,4 @@ cd ~/.dotfiles/gui/blender &&
 sh install.sh &&
 
 # [MESSAGE]
-echo "Gui Installation successful!"
+echo "GUI Installation successful!"
