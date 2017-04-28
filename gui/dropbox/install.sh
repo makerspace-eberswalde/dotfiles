@@ -19,9 +19,9 @@ echo "===================================\n"
 
 # [VERSION3]: https://www.digitalocean.com/community/tutorials/how-to-install-dropbox-client-as-a-service-on-ubuntu-14-04
 #cd ~ &&
-#curl -Lo dropbox-linux-x86_64.tar.gz https://www.dropbox.com/download?plat=lnx.x86_64 &&
-#sudo mkdir -p /opt/dropbox &&
-#sudo tar xzfv dropbox-linux-x86_64.tar.gz --strip 1 -C /opt/dropbox &&
+curl -Lo dropbox-linux-x86_64.tar.gz https://www.dropbox.com/download?plat=lnx.x86_64 &&
+sudo mkdir -p /opt/dropbox &&
+sudo tar xzfv dropbox-linux-x86_64.tar.gz --strip 1 -C /opt/dropbox &&
 # link to account
 # Set Up Service Script
 cd ~ &&
@@ -43,10 +43,5 @@ echo "7"
 # run droxbox and link
 /opt/dropbox/dropboxd &
 # Install Dropbox CLI
-
-
-
-
-
 echo "\nINSTALL DROPBOX END"
 echo "===================================\n"
