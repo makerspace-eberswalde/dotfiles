@@ -1,3 +1,2 @@
-if [ ! -e ~/.zshrc ]; then
-  echo "in"
-fi
+sudo apt-get update
+echo "test"
