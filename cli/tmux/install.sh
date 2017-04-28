@@ -37,7 +37,7 @@ fi
 echo "if 4"
 if [ -f "tmux-next-ubuntu.deb" ]; then
   sudo dpkg -i tmux-next-ubuntu.deb &&
-  rm tmux-next-ubuntu.deb &&
+  rm tmux-next-ubuntu.deb;
 fi
 sudo rm -f /usr/bin/tmux &&
 sudo ln -s /usr/bin/tmux-next /usr/bin/tmux &&
