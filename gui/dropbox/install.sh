@@ -25,7 +25,7 @@ echo "===================================\n"
 # link to account
 # Set Up Service Script
 cd ~ &&
-sudo curl -o /etc/init.d/dropbox https://gist.githubusercontent.com/thisismitch/d0133d91452585ae2adc/raw/699e7909bdae922201b8069fde3011bbf2062048/dropbox &&
+sudo curl -o /etc/init.d/dropbox https://gist.githubusercontent.com/thisismitch/d0133d91452585ae2adc/raw/699e7909bdae922201b8069fde3011bbf2062048/dropbox
 sudo chmod +x /etc/init.d/dropbox &&
 sudo rm /etc/default/dropbox
 sudo touch /etc/default/dropbox
