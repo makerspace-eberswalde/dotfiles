@@ -9,3 +9,6 @@ sh install.sh &&
 # [INSTALL] blender 
 cd ~/.dotfiles/gui/blender &&
 sh install.sh &&
+
+# [MESSAGE]
+echo "Gui Installation successful!"
