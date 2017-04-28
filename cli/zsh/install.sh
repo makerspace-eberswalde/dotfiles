@@ -1,4 +1,4 @@
-echo "\nINSTALL ZSH"
+echo "\nINSTALL ZSH START"
 echo "===================================\n"
 
 # install zsh
@@ -36,3 +36,6 @@ echo "\n.zshrc"
 echo "---------------------\n"
 FILE_RC=`pwd`/zshrc;
 cp -f $FILE_RC ~/.zshrc;
+
+echo "\nINSTALL ZSH DONE"
+echo "===================================\n"

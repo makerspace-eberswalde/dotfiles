@@ -1,6 +1,6 @@
 # INSTALL HELPER FOR DIFFERENT TMUX-NEXT VERSIONs
-echo "\nINSTALL TMUX: tmux-next"
-echo "=====================\n"
+echo "\nINSTALL TMUX: tmux-next START"
+echo "=============================\n"
 MACHINE_TYPE=`uname -m`
 if [ ${MACHINE_TYPE} = 'x86_64' ]; then
   # 64-bit stuff here
@@ -74,3 +74,5 @@ mv ~/.tmuxinator/*.yml ~/.tmuxinator/backup 2>/dev/null
 echo "\nTMUXINATOR: link .tmuxinator"
 echo "----------------------------\n"
 ln -s ~/.dotfiles/cli/tmux/tmuxinator/* ~/.tmuxinator
+echo "\nINSTALL TMUX: tmux-next DONE"
+echo "============================\n"

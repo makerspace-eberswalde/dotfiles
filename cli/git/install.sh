@@ -1,4 +1,4 @@
-echo "\nINSTALL GIT"
+echo "\nINSTALL GIT START"
 echo "===================================\n"
 
 # TODO: create backups
@@ -18,3 +18,6 @@ ln -s $FILE_CONFIG_SETUP ~/.gitconfig-setup
 rm -f ~/.gitignore 2>/dev/null
 FILE_IGNORE=`pwd`/gitignore
 ln -s $FILE_IGNORE ~/.gitignore
+
+echo "\nINSTALL GIT DONE"
+echo "===================================\n"

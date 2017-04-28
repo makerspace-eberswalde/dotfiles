@@ -22,3 +22,5 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo chown -R `whoami` /usr/local
 npm install n -g
 n 7.9.0
+echo "\nINSTALL NODEJS DONE"
+echo "===================================\n"
