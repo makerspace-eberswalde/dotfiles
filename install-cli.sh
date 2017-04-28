@@ -32,6 +32,10 @@ sh install.sh &&
 cd ~/.dotfiles/cli/nodejs &&
 sh install.sh &&
 
+# [INSTALL] npm (depends on nodejs)
+cd ~/.dotfiles/cli/npm &&
+sh install.sh &&
+
 # [INSTALL] vim
 cd ~/.dotfiles/cli/vim &&
 sh install.sh &&
@@ -40,4 +44,4 @@ sh install.sh &&
 sudo chsh -s /bin/zsh mkrspcebw &&
 
 # restart
-sudo shutdown -r
+sudo shutdown -r now

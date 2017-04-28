@@ -24,3 +24,4 @@ npm install n -g &&
 n 7.9.0 &&
 echo "\nINSTALL NODEJS DONE"
 echo "===================================\n"
+
