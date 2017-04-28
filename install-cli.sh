@@ -19,6 +19,7 @@ sudo apt-get install -y curl &&
 sudo apt-get install -y wget &&
 sudo apt-get install -y htop &&
 sudo apt-get install -y build-essential &&
+sudo apt-get install -y subversion &&
 
 # [INSTALL] tmux
 cd ~/.dotfiles/cli/tmux &&
