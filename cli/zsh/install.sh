@@ -37,5 +37,9 @@ echo "---------------------\n"
 FILE_RC=`pwd`/zshrc &&
 cp -f $FILE_RC ~/.zshrc &&
 
+# compinit insecure functions problem: http://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories 
+cd /usr/local/share/zsh &&
+sudo chmod -R 755 ./site-functions
+
 echo "\nINSTALL ZSH DONE"
 echo "===================================\n"
