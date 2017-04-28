@@ -38,10 +38,10 @@ echo "5"
 #sudo nano /etc/default/dropbox &&
 sudo service dropbox start &&
 echo "6"
-sudo update-rc.d dropbox defaults &&
+sudo update-rc.d dropbox defaults 2>/dev/null &&
 echo "7"
 # run droxbox and link
-/opt/dropbox/dropboxd
+/opt/dropbox/dropboxd &
 # Install Dropbox CLI
 
 
