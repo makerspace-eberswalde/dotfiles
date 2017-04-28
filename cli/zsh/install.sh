@@ -10,7 +10,7 @@ sudo apt-get install -y zsh &&
 echo "\noh-my-zsh"
 echo "---------------------\n"
 rm -rf ~/.oh-my-zsh &&
-git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh &&
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh &&
 
 # mv .zshrc to backup if existing
 echo "\n.zshrc_backup"

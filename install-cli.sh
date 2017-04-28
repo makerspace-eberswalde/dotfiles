@@ -41,7 +41,7 @@ cd ~/.dotfiles/cli/vim &&
 sh install.sh &&
 
 # [CHSH]
-sudo chsh -s /bin/zsh mkrspcebw &&
+chsh -s /bin/zsh &&
 
 # restart
-sudo shutdown -r now
+#sudo shutdown -r now
