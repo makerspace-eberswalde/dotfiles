@@ -42,6 +42,9 @@ sudo update-rc.d dropbox defaults 2>/dev/null &&
 echo "7"
 # run droxbox and link
 /opt/dropbox/dropboxd &
+echo "\n\nFirefox should start automatically to allow you Logging into your Dropbox Account!"
+echo "\n\nThe script is waiting for 10 Seconds now to let that happen!"
+wait 10
 # Install Dropbox CLI
 echo "\nINSTALL DROPBOX END"
 echo "===================================\n"

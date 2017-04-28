@@ -11,8 +11,7 @@ git clone --depth=1 https://github.com/makerspace-eberswalde/dotfiles.git ~/.dot
 
 # [INSTALL] git
 cd ~/.dotfiles/cli/git &&
-sh install.sh &&
-
+sh install.sh && 
 # [INSTALL] oneliner
 sudo apt-get update &&
 sudo apt-get install -y curl &&
@@ -47,8 +46,19 @@ sudo chsh -s /bin/zsh mkrspcebw &&
 # [MESSAGE]
 echo "CLI Installation successful!"
 
-# [WAIT]
-wait 10
+# [RESTART]
+if [ -n "$1" ]; then
+	if [ "$1" = "norestart" ]; then 
+    		echo "no restart" 
+	fi;
+else
 
-# restart
-sudo shutdown -r now
+		while true; do
+    			read -p "\nEinige Programme benötigen einen Neustart um zu funktionieren!\n\nWollen Sie den Rechner jetzt neu starten? [Jj|Nn]" yn
+    			case $yn in
+        			[Jj]* ) echo "yes"; sudo shutdown -r now;;
+        			[Nn]* ) echo "no"; break;;
+        			* ) echo "Bitte antworten Sie mit j/n.";;
+    			esac
+		done
+fi

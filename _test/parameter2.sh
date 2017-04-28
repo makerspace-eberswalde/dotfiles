@@ -1,19 +1,3 @@
-# [INSTALL] google-chrome 
-cd ~/.dotfiles/gui/google-chrome &&
-sh install.sh &&
-
-# [INSTALL] inkscape 
-cd ~/.dotfiles/gui/inkscape &&
-sh install.sh &&
-
-# [INSTALL] blender 
-cd ~/.dotfiles/gui/blender &&
-sh install.sh &&
-
-# [MESSAGE]
-echo "GUI Installation successful!"
-
-# [RESTART]
 if [ -n "$1" ]; then
 	if [ "$1" = "norestart" ]; then 
     		echo "no restart" 
