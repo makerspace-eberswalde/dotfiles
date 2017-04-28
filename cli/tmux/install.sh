@@ -58,8 +58,8 @@ cp $FILE_CONF ~/.tmux.conf &&
 # https://www.cyberciti.biz/faq/debian-ubuntu-install-gem-the-frontend-to-rubygems/
 echo "\nTMUXINATOR"
 echo "----------\n"
-sudo apt-get install -y ruby &&
-sudo apt-get install -y gem &&
+sudo apt-get install -y build-dep ruby &&
+sudo apt-get install -y build-dep gem &&
 sudo gem install tmuxinator &&
 echo "\nTMUXINATOR: tmuxinator.zsh"
 echo "--------------------------\n"
