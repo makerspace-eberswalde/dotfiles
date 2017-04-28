@@ -31,10 +31,10 @@ sudo rm /etc/default/dropbox
 sudo touch /etc/default/dropbox
 sudo echo "DROPBOX_USERS=\"mkrspcebw\"" >> /etc/default/dropbox
 #sudo nano /etc/default/dropbox &&
-sudo service dropbox start
+sudo service dropbox start &&
 sudo update-rc.d dropbox defaults &&
 # run droxbox and link
-/opt/dropbox/dropboxd &&
+/opt/dropbox/dropboxd
 # Install Dropbox CLI
 
 
