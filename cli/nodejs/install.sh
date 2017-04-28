@@ -14,13 +14,13 @@ echo "===================================\n"
 #sudo apt-get install -f;
 
 # node: http://askubuntu.com/questions/404929/node-command-not-found
-sudo apt-get --yes --force-yes install nodejs
-sudo apt-get --yes --force-yes install npm
-sudo ln -s /usr/bin/nodejs /usr/bin/node
+sudo apt-get --yes --force-yes install nodejs &&
+sudo apt-get --yes --force-yes install npm &&
+sudo ln -s /usr/bin/nodejs /usr/bin/node &&
 # fix npm permission problem: https://docs.npmjs.com/getting-started/fixing-npm-permissions
 # npm confi get prefix
-sudo chown -R `whoami` /usr/local
-npm install n -g
-n 7.9.0
+sudo chown -R `whoami` /usr/local &&
+npm install n -g &&
+n 7.9.0 &&
 echo "\nINSTALL NODEJS DONE"
 echo "===================================\n"
