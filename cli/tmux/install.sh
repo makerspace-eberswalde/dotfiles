@@ -32,47 +32,47 @@ else
   fi
 fi
 if [ -f "tmux-next-ubuntu.deb" ]; then
-  sudo dpkg -i tmux-next-ubuntu.deb;
-  rm tmux-next-ubuntu.deb;
+  sudo dpkg -i tmux-next-ubuntu.deb &&
+  rm tmux-next-ubuntu.deb &&
 fi
-sudo rm -f /usr/bin/tmux
-sudo ln -s /usr/bin/tmux-next /usr/bin/tmux;
+sudo rm -f /usr/bin/tmux &&
+sudo ln -s /usr/bin/tmux-next /usr/bin/tmux &&
 # vi-copy issue: https://github.com/tmux/tmux/issues/592
 
 # link tmux.conf_setup
 echo "\nTMUX: tmux.conf_setup"
 echo "---------------------\n"
-rm -f ~/.tmux.conf_setup;
-FILE_CONFIG_SETUP=`pwd`/tmux.conf_setup;
-ln -s $FILE_CONFIG_SETUP ~/.tmux.conf_setup;
+rm -f ~/.tmux.conf_setup &&
+FILE_CONFIG_SETUP=`pwd`/tmux.conf_setup &&
+ln -s $FILE_CONFIG_SETUP ~/.tmux.conf_setup &&
 
 # cp tmux.conf which sources tmux.conf_setup
 # write your own aliases here
 echo "\nTMUX: tmux.conf"
 echo "---------------\n"
-rm -f ~/.tmux.conf;
-FILE_CONF=`pwd`/tmux.conf;
-cp $FILE_CONF ~/.tmux.conf;
+rm -f ~/.tmux.conf &&
+FILE_CONF=`pwd`/tmux.conf &&
+cp $FILE_CONF ~/.tmux.conf &&
 
 # TMUXINATOR: https://github.com/tmuxinator/tmuxinator
 # https://www.cyberciti.biz/faq/debian-ubuntu-install-gem-the-frontend-to-rubygems/
 echo "\nTMUXINATOR"
 echo "----------\n"
-sudo apt-get install -y ruby;
-sudo apt-get install -y gem;
-sudo gem install tmuxinator;
+sudo apt-get install -y ruby &&
+sudo apt-get install -y gem &&
+sudo gem install tmuxinator &&
 echo "\nTMUXINATOR: tmuxinator.zsh"
 echo "--------------------------\n"
-mkdir ~/.bin;
-wget -P ~/.bin https://github.com/tmuxinator/tmuxinator/blob/master/completion/tmuxinator.zsh;
-mkdir ~/.tmuxinator; 
+mkdir ~/.bin &&
+wget -P ~/.bin https://github.com/tmuxinator/tmuxinator/blob/master/completion/tmuxinator.zsh &&
+mkdir ~/.tmuxinator && 
 echo "\nTMUXINATOR: link .tmuxinator/backup"
 echo "-----------------------------------\n"
-rm -rf ~/.tmuxinator/backup;
-mkdir ~/.tmuxinator/backup;
-mv ~/.tmuxinator/*.yml ~/.tmuxinator/backup;
+rm -rf ~/.tmuxinator/backup &&
+mkdir ~/.tmuxinator/backup &&
+mv ~/.tmuxinator/*.yml ~/.tmuxinator/backup &&
 echo "\nTMUXINATOR: link .tmuxinator"
 echo "----------------------------\n"
-ln -s ~/.dotfiles/cli/tmux/tmuxinator/* ~/.tmuxinator;
+ln -s ~/.dotfiles/cli/tmux/tmuxinator/* ~/.tmuxinator &&
 echo "\nINSTALL TMUX: tmux-next DONE"
 echo "============================\n"
