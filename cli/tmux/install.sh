@@ -2,9 +2,11 @@
 echo "\nINSTALL TMUX: tmux-next START"
 echo "=============================\n"
 MACHINE_TYPE=`uname -m`
+echo "if 1"
 if [ ${MACHINE_TYPE} = 'x86_64' ]; then
   # 64-bit stuff here
   UBUNTU_VERSION=`lsb_release -rs`
+echo "if 2"
   if [ $UBUNTU_VERSION = "12.04" ]; then
     wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-12.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu12.04.1_amd64.deb
   elif [ $UBUNTU_VERSION = "14.04" ]; then
@@ -19,6 +21,7 @@ if [ ${MACHINE_TYPE} = 'x86_64' ]; then
 else
   # 32-bit stuff here
   echo 32-bit
+echo "if 3"
   if [ $UBUNTU_VERSION = "12.04" ]; then
     wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-12.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu12.04.1_i386.deb
   elif [ $UBUNTU_VERSION = "14.04" ]; then
@@ -31,6 +34,7 @@ else
     wget -O tmux-next-ubuntu.deb https://raw.githubusercontent.com/makerspace-eberswalde/installer/master/tmux/ubuntu-16.04/tmux-next_2.3~20170426~bzr3814+20-1ubuntu1~ppa0~ubuntu16.04.1_i386.deb
   fi
 fi
+echo "if 4"
 if [ -f "tmux-next-ubuntu.deb" ]; then
   sudo dpkg -i tmux-next-ubuntu.deb &&
   rm tmux-next-ubuntu.deb &&
