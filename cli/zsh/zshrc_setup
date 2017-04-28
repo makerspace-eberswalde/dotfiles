@@ -27,7 +27,7 @@ alias makerspace.workshopraum.github="firefox https://github.com/makerspace-eber
 alias makerspace.dotfiles.github="firefox https://github.com/makerspace-eberswalde/dotfiles"
 alias ms.goto="makerspace.goto"
 # SHUTDOWN
-alias sh="sudo shutdown now"
+alias sd="sudo shutdown now"
 # TFTP
 alias tftp.goto="cd /var/lib/tftpboot && ls -lisa"
 alias tftp.distros="cd /var/lib/tftpboot/distros && ls -lisa"

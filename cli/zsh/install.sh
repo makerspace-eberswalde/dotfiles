@@ -10,7 +10,8 @@ sudo apt-get install -y zsh &&
 echo "\noh-my-zsh"
 echo "---------------------\n"
 rm -rf ~/.oh-my-zsh &&
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh &&
+#sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - &&)" &&
+wget --no-cache -O - https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash &&
 
 # mv .zshrc to backup if existing
 echo "\n.zshrc_backup"

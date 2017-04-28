@@ -5,7 +5,7 @@ echo "===================================\n"
 # TODO: source file for beeing able to have own things: http://stackoverflow.com/questions/1557183/is-it-possible-to-include-a-file-in-your-gitconfig
 
 # link 
-rm -f ~/.gitconfig 2>/dev/null &&
+rm -f ~/.gitconfig &&
 FILE_CONFIG=`pwd`/gitconfig &&
 ln -s $FILE_CONFIG ~/.gitconfig &&
 

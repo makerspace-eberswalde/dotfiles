@@ -41,10 +41,13 @@ cd ~/.dotfiles/cli/vim &&
 sh install.sh &&
 
 # [CHSH]
-chsh -s /bin/zsh &&
+sudo chsh -s /bin/zsh mkrspcebw &&
 
 # [MESSAGE]
 echo "CLI Installation successful!"
 
+# [WAIT]
+wait 10
+
 # restart
-#sudo shutdown -r now
+sudo shutdown -r now
