@@ -10,6 +10,10 @@ sh install.sh &&
 cd ~/.dotfiles/gui/blender &&
 sh install.sh &&
 
+# [INSTALL] dropbox 
+cd ~/.dotfiles/gui/dropbox &&
+sh install.sh &&
+
 # [MESSAGE]
 echo "GUI Installation successful!"
 
