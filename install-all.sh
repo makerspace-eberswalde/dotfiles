@@ -4,8 +4,4 @@ wget --no-cache -qO- https://raw.githubusercontent.com/makerspace-eberswalde/dot
 	sh install-gui.sh &&
 
 	# [MESSAGE]
-echo "INSTALL SUCCESSFULL!" &&
-
-	# [RESTART]
-cd ~/.dotfiles &&
-	sh scripts/restart.sh
+echo "INSTALL SUCCESSFULL!"
