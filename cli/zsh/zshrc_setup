@@ -25,12 +25,14 @@ alias dropbox.client="/opt/dropbox/dropboxd"
 alias dropbox.deamon="sudo service dropbox start "
 # MAKERSPACE
 alias makerspace.goto="cd ~/code/makerspace-eberswalde && ls -lisa"
-alias makerspace.github="firefox https://github.com/makerspace-eberswalde"
-alias makerspace.installer.github="firefox https://github.com/makerspace-eberswalde/installer"
-alias makerspace.knowledge.github="firefox https://github.com/makerspace-eberswalde/knowledge"
-alias makerspace.workshopraum.github="firefox https://github.com/makerspace-eberswalde/workshopraum"
-alias makerspace.dotfiles.github="firefox https://github.com/makerspace-eberswalde/dotfiles"
+alias makerspace.github="firefox https://github.com/makerspace-eberswalde && exit"
+alias makerspace.installer.github="firefox https://github.com/makerspace-eberswalde/installer && exit"
+alias makerspace.knowledge.github="firefox https://github.com/makerspace-eberswalde/knowledge && exit"
+alias makerspace.workshopraum.github="firefox https://github.com/makerspace-eberswalde/workshopraum && exit"
+alias makerspace.dotfiles.github="firefox https://github.com/makerspace-eberswalde/dotfiles && exit"
 alias ms.goto="makerspace.goto"
+# OPEN
+alias o="gnome-open . && exit"
 # SHUTDOWN
 alias sd="sudo shutdown now"
 # TFTP
