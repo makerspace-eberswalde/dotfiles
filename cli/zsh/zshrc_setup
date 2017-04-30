@@ -31,6 +31,7 @@ alias makerspace.knowledge.github="firefox https://github.com/makerspace-eberswa
 alias makerspace.workshopraum.github="firefox https://github.com/makerspace-eberswalde/workshopraum && exit"
 alias makerspace.dotfiles.github="firefox https://github.com/makerspace-eberswalde/dotfiles && exit"
 alias ms.goto="makerspace.goto"
+alias knowledge.goto="cd ~/code/makerspace-eberswalde/knowledge && ls"
 # OPEN
 alias o="gnome-open . 2>/dev/null && exit"
 # SHUTDOWN
