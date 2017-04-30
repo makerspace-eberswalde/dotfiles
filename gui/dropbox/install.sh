@@ -13,16 +13,11 @@ echo "===================================\n"
 	sudo chmod +x /etc/init.d/dropbox &&
 	sudo rm /etc/default/dropbox &&
 	sudo touch /etc/default/dropbox &&
-	echo "DROPBOX_USERS=\"mkrspcebw\"" | sudo tee -a /etc/default/dropbox &&
-	echo "start service"
-sudo service dropbox start &&
-	echo $?
-echo "update-rc.d"
-sudo update-rc.d dropbox defaults &&
-	# run droxbox and link
-echo "/opt/drobox/droboxd"
-/opt/dropbox/dropboxd
-echo "========================================================================================\n"
+	sudo service dropbox start &&
+	sudo update-rc.d dropbox defaults &&
+	screen -d -m /opt/dropbox/dropboxd &&
+
+	echo "========================================================================================\n"
 echo "\n\nFirefox should start automatically to allow you Logging into your Dropbox Account!"
 echo "The script is waiting for 10 Seconds now to let that happen!"
 echo "========================================================================================\n"
