@@ -15,7 +15,13 @@ echo "===================================\n"
 	sudo touch /etc/default/dropbox &&
 	sudo service dropbox start &&
 	sudo update-rc.d dropbox defaults &&
+	cd ~ &&
+	curl -LO https://www.dropbox.com/download?dl=packages/dropbox.py &&
+	chmod +x ~/dropbox.py &&
+	ln -s /opt/dropbox ~/.dropbox-dist &&
+	~/dropbox.py autostart &&
 	/opt/dropbox/dropboxd &
+
 
 echo "========================================================================================\n"
 echo "\n\nFirefox should start automatically to allow you Logging into your Dropbox Account!"

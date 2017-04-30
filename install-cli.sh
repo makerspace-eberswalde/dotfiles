@@ -21,7 +21,7 @@ sudo apt-get update &&
 	sudo apt-get install -y flashplugin-installer &&
 	#sudo apt-get install -y openjdk-6-jre &&
 	sudo apt-get install -y nmap &&
-	sudo apt-get install -y wireshark &&
+	#sudo apt-get install -y wireshark &&
 	sudo apt-get install -y tshark &&
 	sudo apt-get install -y tree &&
 	sudo apt-get install -y iptraf &&
