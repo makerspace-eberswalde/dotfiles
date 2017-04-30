@@ -31,42 +31,33 @@ rm -f ~/.vimrc_plugins &&
 
 	# PLUGINS
 # =============================================================================
-# [VIM-PLUGIN] nerdtree
-rm -rf ~/.vim/bundle/nerdtree &&
-	git clone --depth=1 https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree &&
+rm -rf ~/.vim/bundle &&
+	# [VIM-PLUGIN] nerdtree
+git clone --depth=1 https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree &&
 	# [VIM-PLUGIN] nerdcommenter
-rm -rf ~/.vim/bundle/nerdcommenter &&
-	git clone --depth=1 https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter &&
+git clone --depth=1 https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter &&
 	# [VIM-PLUGIN] vim-tmux-navigator
-rm -rf ~/.vim/bundle/vim-tmux-navigator &&
-	git clone --depth=1 https://github.com/christoomey/vim-tmux-navigator ~/.vim/bundle/vim-tmux-navigator &&
+git clone --depth=1 https://github.com/christoomey/vim-tmux-navigator ~/.vim/bundle/vim-tmux-navigator &&
 	# [VIM-PLUGIN] vim-colors-solarized
-rm -rf ~/.vim/bundle/vim-colors-solarized &&
-	git clone --depth=1 https://github.com/altercation/vim-colors-solarized ~/.vim/bundle/vim-colors-solarized &&
+git clone --depth=1 https://github.com/altercation/vim-colors-solarized ~/.vim/bundle/vim-colors-solarized &&
 	# [VIM-PLUGIN] vim-nerdtree-syntax-highlight
-rm -rf ~/.vim/bundle/vim-nerdtree-syntax-highlight &&
-	git clone --depth=1 https://github.com/tiagofumo/vim-nerdtree-syntax-highlight ~/.vim/bundle/vim-nerdtree-syntax-highlight &&
+git clone --depth=1 https://github.com/tiagofumo/vim-nerdtree-syntax-highlight ~/.vim/bundle/vim-nerdtree-syntax-highlight &&
 	# [VIM-PLUGIN] vim-devicons
-rm -rf ~/.vim/bundle/vim-devicons &&
-	git clone --depth=1 https://github.com/ryanoasis/vim-devicons ~/.vim/bundle/vim-devicons &&
+git clone --depth=1 https://github.com/ryanoasis/vim-devicons ~/.vim/bundle/vim-devicons &&
 	# [VIM-PLUGIN] ctrlp
-rm -rf ~/.vim/bundle/ctrlp &&
-	git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp &&
+git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp &&
 	# [VIM-PLUGIN] surround
-rm -rf ~/.vim/bundle/vim-surround &&
-	git clone --depth=1 https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround &&
+git clone --depth=1 https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround &&
 	# [VIM-PLUGIN] SNIPPETS
-rm -rf ~/.vim/bundle/tlib-vim &&
-	git clone --depth=1 https://github.com/tomtom/tlib_vim.git ~/.vim/bundle/tlib-vim &&
-	rm -rf ~/.vim/bundle/vim-addon-mw-utils.git &&
-	git clone --depth=1 https://github.com/MarcWeber/vim-addon-mw-utils.git ~/.vim/bundle/vim-addon-mw-utils.git &&
-	rm -rf ~/.vim/bundle/vim-snipmate.git &&
-	git clone --depth=1 https://github.com/garbas/vim-snipmate.git ~/.vim/bundle/vim-snipmate.git &&
-	rm -rf ~/.vim/bundle/vim-snippets.git &&
-	git clone --depth=1 https://github.com/honza/vim-snippets.git ~/.vim/bundle/vim-snippets.git &&
+git clone --depth=1 https://github.com/tomtom/tlib_vim.git ~/.vim/bundle/tlib-vim &&
+	# [VIM-PLUGIN]
+git clone --depth=1 https://github.com/MarcWeber/vim-addon-mw-utils.git ~/.vim/bundle/vim-addon-mw-utils.git &&
+	# [VIM-PLUGIN]
+git clone --depth=1 https://github.com/garbas/vim-snipmate.git ~/.vim/bundle/vim-snipmate.git &&
+	# [VIM-PLUGIN]
+git clone --depth=1 https://github.com/honza/vim-snippets.git ~/.vim/bundle/vim-snippets.git &&
 	# [VIM-PLUGIN] Autoformat
-rm -rf ~/.vim/bundle/vim-autoformat.git &&
-	git clone --depth=1 https://github.com/Chiel92/vim-autoformat.git ~/.vim/bundle/vim-autoformat &&
+git clone --depth=1 https://github.com/Chiel92/vim-autoformat.git ~/.vim/bundle/vim-autoformat &&
 
 	# FONTS
 # =============================================================================
