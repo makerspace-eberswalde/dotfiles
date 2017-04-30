@@ -16,7 +16,8 @@ echo "===================================\n"
 	echo "DROPBOX_USERS=\"mkrspcebw\"" | sudo tee -a /etc/default/dropbox &&
 	echo "start service"
 sudo service dropbox start &&
-	echo "update-rc.d"
+	echo $?
+echo "update-rc.d"
 sudo update-rc.d dropbox defaults &&
 	# run droxbox and link
 echo "/opt/drobox/droboxd"
