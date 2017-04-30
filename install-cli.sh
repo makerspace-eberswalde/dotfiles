@@ -13,15 +13,12 @@ sudo apt-get update &&
 	sudo apt-get install -y screen &&
 	sudo apt-get install -y openssh-server &&
 	sudo apt-get install -y gnome-panel &&
-	# sudo apt-get install -y gnome-session-fallback &&
+	#sudo apt-get install -y gnome-session-fallback &&
 	sudo apt-get install -y firefox-locale-de &&
 	sudo apt-get install -y thunderbird-locale-de &&
 	sudo apt-get install -y libreoffice-l10n-de &&
 	sudo apt-get install -y libreoffice-help-de &&
 	sudo apt-get install -y flashplugin-installer &&
-	sudo apt-get install -y gstreamer0.10-fluendo-mp3 &&
-	sudo apt-get install -y gstreamer0.10-plugins-bad &&
-	sudo apt-get install -y gstreamer0.10-plugins-ugly &&
 	sudo apt-get install -y openjdk-6-jre &&
 	sudo apt-get install -y nmap &&
 	sudo apt-get install -y wireshark &&
