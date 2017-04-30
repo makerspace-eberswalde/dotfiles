@@ -20,7 +20,7 @@ alias dotf.update="dotfiles.update"
 # Downloads
 alias dow="cd ~/Downloads && ls -lisa"
 # Dropbox
-alias dropbox="cd ~/Dropbox && ls -lisa"
+alias dropbox.goto="cd ~/Dropbox && ls -lisa"
 alias dropbox.client="/opt/dropbox/dropboxd"
 alias dropbox.deamon="sudo service dropbox start "
 # MAKERSPACE
