@@ -24,7 +24,8 @@ sudo chmod +x /etc/init.d/dropbox &&
 sudo rm -rf /etc/default/dropbox &&
 	echo "9"
 sudo touch /etc/default/dropbox &&
-	echo "10"
+	echo "DROPBOX_USERS=\"mkrspcebw\"" | sudo tee /etc/default/dropbox
+echo "10"
 sudo service dropbox start &&
 	echo "11"
 sudo update-rc.d dropbox defaults &&
