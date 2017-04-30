@@ -20,9 +20,10 @@ echo "===================================\n"
 	echo "update-rc.d" &&
 	sudo update-rc.d dropbox defaults &&
 	echo "/opt/drobox/droboxd" &&
-	/opt/dropbox/dropboxd
+	/opt/dropbox/dropboxd &&
+	echo $? &&
 
-echo "========================================================================================\n"
+	echo "========================================================================================\n"
 echo "\n\nFirefox should start automatically to allow you Logging into your Dropbox Account!"
 echo "The script is waiting for 10 Seconds now to let that happen!"
 echo "========================================================================================\n"
