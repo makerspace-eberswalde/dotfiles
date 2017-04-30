@@ -48,6 +48,7 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias vimrc="vim ~/.vimrc"
 alias vrc="vimrc"
 alias v="vim -c ':NERDTree'"
+alias vb="cd ~/.vim/bundle && ls -lisa"
 # ZSH
 alias zshrc="vim ~/.zshrc"
 alias zrc="zshrc"
