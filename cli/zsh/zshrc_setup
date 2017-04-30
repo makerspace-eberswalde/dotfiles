@@ -32,7 +32,7 @@ alias makerspace.workshopraum.github="firefox https://github.com/makerspace-eber
 alias makerspace.dotfiles.github="firefox https://github.com/makerspace-eberswalde/dotfiles && exit"
 alias ms.goto="makerspace.goto"
 # OPEN
-alias o="gnome-open . && exit"
+alias o="gnome-open . 2>/dev/null && exit"
 # SHUTDOWN
 alias sd="sudo shutdown now"
 # TFTP
