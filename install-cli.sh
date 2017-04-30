@@ -1,54 +1,54 @@
 # [MESSAGE]
-echo "START CLI INSTALLATION"
-&& echo "======================================================"
+echo "START CLI INSTALLATION" &&
+	echo "======================================================" &&
 
-# [INSTALL] oneliner
-&& sudo apt-get update
-&& sudo apt-get install -y curl
-&& sudo apt-get install -y git
-&& sudo apt-get install -y wget
-&& sudo apt-get install -y htop
-&& sudo apt-get install -y build-essential
-&& sudo apt-get install -y subversion
+	# [INSTALL] oneliner
+sudo apt-get update &&
+	sudo apt-get install -y curl &&
+	sudo apt-get install -y git &&
+	sudo apt-get install -y wget &&
+	sudo apt-get install -y htop &&
+	sudo apt-get install -y build-essential &&
+	sudo apt-get install -y subversion &&
 
-# [MKDIR]
-&& mkdir -p ~/code/test
-&& mkdir -p ~/.bin
+	# [MKDIR]
+mkdir -p ~/code/test &&
+	mkdir -p ~/.bin &&
 
-# [CHOWN]
-&& sudo chown -R $USER ~/.bin
+	# [CHOWN]
+sudo chown -R $USER ~/.bin &&
 
-# [CLONE] dotfiles
-&& rm -rf ~/.dotfiles
-&& git clone --depth=1 https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles
+	# [CLONE] dotfiles
+rm -rf ~/.dotfiles &&
+	git clone --depth=1 https://github.com/makerspace-eberswalde/dotfiles.git ~/.dotfiles &&
 
-# [INSTALL] git
-&& cd ~/.dotfiles/cli/git
-&& sh install.sh
+	# [INSTALL] git
+cd ~/.dotfiles/cli/git &&
+	sh install.sh &&
 
-# [INSTALL] tmux
-&& cd ~/.dotfiles/cli/tmux
-&& sh install.sh
+	# [INSTALL] tmux
+cd ~/.dotfiles/cli/tmux &&
+	sh install.sh &&
 
-# [INSTALL] zsh (depends on tmux)
-&& cd ~/.dotfiles/cli/zsh
-&& sh install.sh
+	# [INSTALL] zsh (depends on tmux)
+cd ~/.dotfiles/cli/zsh &&
+	sh install.sh &&
 
-# [INSTALL] nodejs
-&& cd ~/.dotfiles/cli/nodejs
-&& sh install.sh
+	# [INSTALL] nodejs
+cd ~/.dotfiles/cli/nodejs &&
+	sh install.sh &&
 
-# [INSTALL] npm (depends on nodejs)
-&& cd ~/.dotfiles/cli/npm
-&& sh install.sh
+	# [INSTALL] npm (depends on nodejs)
+cd ~/.dotfiles/cli/npm &&
+	sh install.sh &&
 
-# [INSTALL] vim
-&& cd ~/.dotfiles/cli/vim
-&& sh install.sh
+	# [INSTALL] vim
+cd ~/.dotfiles/cli/vim &&
+	sh install.sh &&
 
-# [CHSH]
-&& sudo chsh -s /bin/zsh mkrspcebw
+	# [CHSH]
+sudo chsh -s /bin/zsh mkrspcebw &&
 
-# [MESSAGE]
-&& echo "CLI Installation successful!"
-&& echo "======================================================"
+	# [MESSAGE]
+echo "CLI Installation successful!" &&
+	echo "======================================================"
