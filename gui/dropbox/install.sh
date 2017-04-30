@@ -14,9 +14,12 @@ echo "===================================\n"
 	sudo rm /etc/default/dropbox &&
 	sudo touch /etc/default/dropbox &&
 	echo "DROPBOX_USERS=\"mkrspcebw\"" | sudo tee -a /etc/default/dropbox &&
-	sudo service dropbox start &&
-	sudo update-rc.d dropbox defaults &&
+	echo "start service"
+sudo service dropbox start &&
+	echo "update-rc.d"
+sudo update-rc.d dropbox defaults &&
 	# run droxbox and link
+echo "/opt/drobox/droboxd"
 /opt/dropbox/dropboxd
 echo "========================================================================================\n"
 echo "\n\nFirefox should start automatically to allow you Logging into your Dropbox Account!"
