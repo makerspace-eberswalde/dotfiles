@@ -19,7 +19,7 @@ sudo apt-get update &&
 	sudo apt-get install -y libreoffice-l10n-de &&
 	sudo apt-get install -y libreoffice-help-de &&
 	sudo apt-get install -y flashplugin-installer &&
-	sudo apt-get install -y openjdk-6-jre &&
+	#sudo apt-get install -y openjdk-6-jre &&
 	sudo apt-get install -y nmap &&
 	sudo apt-get install -y wireshark &&
 	sudo apt-get install -y tshark &&
