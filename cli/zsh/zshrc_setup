@@ -21,6 +21,8 @@ alias dotf.update="dotfiles.update"
 alias dow="cd ~/Downloads && ls -lisa"
 # Dropbox
 alias dropbox="cd ~/Dropbox && ls -lisa"
+alias dropbox.client="/opt/dropbox/dropboxd"
+alias dropbox.deamon="sudo service dropbox start "
 # MAKERSPACE
 alias makerspace.goto="cd ~/code/makerspace-eberswalde && ls -lisa"
 alias makerspace.github="firefox https://github.com/makerspace-eberswalde"
