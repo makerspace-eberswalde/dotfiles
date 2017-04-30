@@ -13,7 +13,7 @@ echo "===================================\n"
 	sudo chmod +x /etc/init.d/dropbox &&
 	sudo rm /etc/default/dropbox &&
 	sudo touch /etc/default/dropbox &&
-	sudo echo "DROPBOX_USERS=\"mkrspcebw\"" | tee -a /etc/default/dropbox &&
+	echo "DROPBOX_USERS=\"mkrspcebw\"" | sudo tee -a /etc/default/dropbox &&
 	sudo service dropbox start &&
 	sudo update-rc.d dropbox defaults &&
 	# run droxbox and link
