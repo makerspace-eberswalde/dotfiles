@@ -17,8 +17,8 @@ echo "===================================\n"
 	sudo update-rc.d dropbox defaults &&
 	cd ~ &&
 	curl -LO https://www.dropbox.com/download?dl=packages/dropbox.py &&
-	chmod +x ~/dropbox.py &&
-	ln -s /opt/dropbox ~/.dropbox-dist &&
+	sudo chmod +x ~/dropbox.py &&
+	sudo ln -s /opt/dropbox ~/.dropbox-dist &&
 	~/dropbox.py autostart &&
 	/opt/dropbox/dropboxd &
 
