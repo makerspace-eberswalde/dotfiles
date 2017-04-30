@@ -13,7 +13,7 @@ sudo apt-get update &&
 	sudo apt-get install -y screen &&
 	sudo apt-get install -y openssh-server &&
 	sudo apt-get install -y gnome-panel &&
-	sudo apt-get install -y gnome-session-fallback &&
+	# sudo apt-get install -y gnome-session-fallback &&
 	sudo apt-get install -y firefox-locale-de &&
 	sudo apt-get install -y thunderbird-locale-de &&
 	sudo apt-get install -y libreoffice-l10n-de &&

@@ -15,9 +15,9 @@ echo "===================================\n"
 	sudo touch /etc/default/dropbox &&
 	sudo service dropbox start &&
 	sudo update-rc.d dropbox defaults &&
-	screen -d -m /opt/dropbox/dropboxd &&
+	/opt/dropbox/dropboxd &
 
-	echo "========================================================================================\n"
+echo "========================================================================================\n"
 echo "\n\nFirefox should start automatically to allow you Logging into your Dropbox Account!"
 echo "The script is waiting for 10 Seconds now to let that happen!"
 echo "========================================================================================\n"
