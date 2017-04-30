@@ -53,3 +53,16 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
 let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 autocmd FileType nerdtree setlocal nolist
+
+" AUTOFORMAT
+" https://github.com/Chiel92/vim-autoformat
+" http://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
+" =======================================================
+:noremap <F3> :Autoformat<CR>
+:set autoindent
+:set tabstop=4
+:filetype indent on
+:set smartindent
+:set softtabstop=0 noexpandtab
+:set shiftwidth=4
+:autocmd BufRead,BufWritePre *.sh normal gg=G
