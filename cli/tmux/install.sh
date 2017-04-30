@@ -68,7 +68,7 @@ mkdir ~/.bin &&
 	echo "\nTMUXINATOR: link .tmuxinator/backup"
 echo "-----------------------------------\n"
 rm -rf ~/.tmuxinator/backup &&
-	mkdir ~/.tmuxinator/backup &&
+	mkdir -p ~/.tmuxinator/backup &&
 	mv ~/.tmuxinator/*.yml ~/.tmuxinator/backup &&
 	echo "\nTMUXINATOR: link .tmuxinator"
 echo "----------------------------\n"

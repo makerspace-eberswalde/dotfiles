@@ -22,6 +22,7 @@ echo "===================================\n"
 	curl -Lo dropbox-linux-x86_64.tar.gz https://www.dropbox.com/download?plat=lnx.x86_64 &&
 	sudo mkdir -p /opt/dropbox &&
 	sudo tar xzfv dropbox-linux-x86_64.tar.gz --strip 1 -C /opt/dropbox &&
+	rm -rf dropbox-linux-x86_64.tar.gz &&
 	# link to account
 # Set Up Service Script
 cd ~ &&
