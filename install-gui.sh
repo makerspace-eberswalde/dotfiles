@@ -7,8 +7,8 @@ cd ~/.dotfiles/gui/inkscape &&
 	sh install.sh &&
 
 	# [INSTALL] blender
-cd ~/.dotfiles/gui/blender &&
-	sh install.sh &&
+#cd ~/.dotfiles/gui/blender &&
+	#sh install.sh &&
 
 	# [INSTALL] dropbox
 cd ~/.dotfiles/gui/dropbox &&
