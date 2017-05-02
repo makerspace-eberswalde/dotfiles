@@ -5,7 +5,7 @@ echo "START CLI INSTALLATION" &&
 	# [INSTALL] oneliner
 sudo apt-get update &&
 	sudo apt-get install -y curl &&
-	sudo apt-get install -y tee &&
+	#sudo apt-get install -y tee &&
 	sudo apt-get install -y git &&
 	sudo apt-get install -y wget &&
 	sudo apt-get install -y htop &&
