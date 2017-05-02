@@ -1,3 +1,5 @@
+echo "\nINSTALL UNITY START"
+echo "===================================\n"
 # https://askubuntu.com/questions/541449/how-do-i-always-show-menu-items-in-unity/541454
 gsettings set com.canonical.Unity always-show-menus true
 
@@ -17,3 +19,5 @@ python ~/.launcher_append_item.py gedit.desktop 4 &&
 python ~/.launcher_append_item.py vim.desktop 5 &&
 python ~/.launcher_append_item.py dropbox.desktop 6 &&
 python ~/.launcher_append_item.py inkscape.desktop 7
+echo "\nINSTALL UNITY DONE"
+echo "===================================\n"
