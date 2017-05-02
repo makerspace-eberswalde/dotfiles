@@ -18,12 +18,16 @@ cd ~/.dotfiles/gui/inkscape &&
 cd ~/.dotfiles/gui/system-load-indicator &&
   sh install.sh &&
 
-  # [INSTALL] unity
-cd ~/.dotfiles/gui/unity &&
+  # [INSTALL] freemind
+cd ~/.dotfiles/gui/freemind &&
   sh install.sh &&
 
   # [INSTALL] virtualbox
 cd ~/.dotfiles/gui/virtualbox &&
+  sh install.sh &&
+
+  # [INSTALL] unity
+cd ~/.dotfiles/gui/unity &&
   sh install.sh &&
 
   # [INSTALL] dropbox
