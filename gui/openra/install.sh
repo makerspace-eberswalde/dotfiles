@@ -5,8 +5,8 @@ echo "===================================\n"
   #yes | sudo apt-get install openra
 
 # https://wiki.ubuntuusers.de/GetDeb/
-sudo add-apt-repository 'deb http://archive.getdeb.net/ubuntu xenial-getdeb apps games' &&
-  sudo add-apt-repository ppa:oibaf/graphics-drivers &&
+sudo add-apt-repository 'deb http://archive.getdeb.net/ubuntu xenial-getdeb apps games' -y &&
+  sudo add-apt-repository ppa:oibaf/graphics-drivers -y &&
   wget -q http://archive.getdeb.net/getdeb-archive.key -O- | sudo apt-key add - &&
   sudo apt-get update &&
   sudo apt-get install -y libsdl2-dev &&
