@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Map1* - FreeMind - Mindmapmodus
+Icon=freemind.png
+Path=/usr/bin/freemind
+Exec=/usr/bin/java -Xmx256M -Dfreemind.base.dir=. -cp ::./lib/freemind.jar:./lib/jibx/jibx-run.jar:./lib/jibx/xpp3.jar:./lib/bindings.jar:./lib/commons-lang-2.0.jar:./lib/forms-1.0.5.jar:./lib/jortho.jar:./lib/xalan.jar:./lib/serializer.jar:./lib/xml-apis.jar:./lib/xercesImpl.jar:. freemind.main.FreeMindStarter
+StartupNotify=false
+StartupWMClass=FreeMind
+OnlyShowIn=Unity;
+X-UnityGenerated=true
