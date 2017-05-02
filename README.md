@@ -2,6 +2,10 @@
 
 ## after gui
 1. start system indicator from dash
+2. login into Dropbox (add to menu bar)
+3. login into Google Chrome (add to menu bar), login to sync
+4. login into Firefox (add to menu bar), login to sync
+5. add terminal to task bar
 
 # Install
 ## install cli tools
@@ -26,4 +30,3 @@
 
 ## dotfiles examples
  * other good examples: https://github.com/paulirish/dotfiles
-

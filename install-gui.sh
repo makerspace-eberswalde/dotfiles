@@ -10,8 +10,12 @@ cd ~/.dotfiles/gui/inkscape &&
 #cd ~/.dotfiles/gui/blender &&
 	#sh install.sh &&
 
-	# [INSTALL] blender
+	# [INSTALL] system-load-indicator
 cd ~/.dotfiles/gui/system-load-indicator &&
+	sh install.sh &&
+
+	# [INSTALL] unity
+cd ~/.dotfiles/gui/unity &&
 	sh install.sh &&
 
 	# [INSTALL] dropbox
