@@ -1,26 +1,31 @@
-# [INSTALL] google-chrome
+# [INSTALL] oneliner
+sudo apt-get install update &&
+  sudo apt-get install -y virtualbox &&
+  sudo apt-get install -y vlc &&
+
+  # [INSTALL] google-chrome
 cd ~/.dotfiles/gui/google-chrome &&
-	sh install.sh &&
+  sh install.sh &&
 
-	# [INSTALL] inkscape
+  # [INSTALL] inkscape
 cd ~/.dotfiles/gui/inkscape &&
-	sh install.sh &&
+  sh install.sh &&
 
-	# [INSTALL] blender
+  # [INSTALL] blender
 #cd ~/.dotfiles/gui/blender &&
-	#sh install.sh &&
+  #sh install.sh &&
 
-	# [INSTALL] system-load-indicator
+  # [INSTALL] system-load-indicator
 cd ~/.dotfiles/gui/system-load-indicator &&
-	sh install.sh &&
+  sh install.sh &&
 
-	# [INSTALL] unity
+  # [INSTALL] unity
 cd ~/.dotfiles/gui/unity &&
-	sh install.sh &&
+  sh install.sh &&
 
-	# [INSTALL] dropbox
+  # [INSTALL] dropbox
 cd ~/.dotfiles/gui/dropbox &&
-	sh install.sh &&
+  sh install.sh &&
 
-	# [MESSAGE]
+  # [MESSAGE]
 echo "GUI Installation successful!"
