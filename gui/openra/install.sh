@@ -8,7 +8,7 @@ echo "===================================\n"
 sudo add-apt-repository 'deb http://archive.getdeb.net/ubuntu xenial-getdeb apps games' &&
   wget -q http://archive.getdeb.net/getdeb-archive.key -O- | sudo apt-key add - &&
   sudo apt-get update &&
-  sudo apt-get install libsdl2-dev &&
+  sudo apt-get install -y libsdl2-dev &&
   sudo apt-get install -y openra
 echo "\nINSTALL OPENRA DONE"
 echo "===================================\n"
