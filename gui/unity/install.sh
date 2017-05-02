@@ -16,11 +16,11 @@ python ~/.launcher_append_item.py google-chrome.desktop 1 &&
 python ~/.launcher_append_item.py firefox.desktop 2 &&
 python ~/.launcher_append_item.py nautilus.desktop 3 &&
 python ~/.launcher_append_item.py gedit.desktop 4 &&
-python ~/.launcher_append_item.py dropbox.desktop 5 &&
-python ~/.launcher_append_item.py inkscape.desktop 6 &&
-python ~/.launcher_append_item.py gvim.desktop 7 &&
+python ~/.launcher_append_item.py gvim.desktop 5 &&
+python ~/.launcher_append_item.py dropbox.desktop 6 &&
+python ~/.launcher_append_item.py inkscape.desktop 7 &&
 python ~/.launcher_append_item.py vlc.desktop 8 &&
-python ~/.launcher_append_item.py virtualbox.desktop 9 &&
-python ~/.launcher_append_item.py gvim.desktop 10 
+python ~/.launcher_append_item.py virtualbox.desktop 9
+
 echo "\nINSTALL UNITY DONE"
 echo "===================================\n"

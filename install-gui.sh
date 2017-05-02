@@ -1,6 +1,5 @@
 # [INSTALL] oneliner
 sudo apt-get install update &&
-  sudo apt-get install -y virtualbox &&
   sudo apt-get install -y vlc &&
 
   # [INSTALL] google-chrome
@@ -21,6 +20,10 @@ cd ~/.dotfiles/gui/system-load-indicator &&
 
   # [INSTALL] unity
 cd ~/.dotfiles/gui/unity &&
+  sh install.sh &&
+
+  # [INSTALL] virtualbox
+cd ~/.dotfiles/gui/virtualbox &&
   sh install.sh &&
 
   # [INSTALL] dropbox

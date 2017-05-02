@@ -62,6 +62,10 @@ cd ~/.dotfiles/cli/npm &&
 cd ~/.dotfiles/cli/vim &&
 	sh install.sh &&
 
+	# [INSTALL] java
+cd ~/.dotfiles/cli/java &&
+	sh install.sh &&
+
 	# [CHSH]
 sudo chsh -s /bin/zsh mkrspcebw &&
 
