@@ -2,6 +2,9 @@ echo "\nINSTALL UNITY START"
 echo "===================================\n"
 # https://askubuntu.com/questions/541449/how-do-i-always-show-menu-items-in-unity/541454
 gsettings set com.canonical.Unity always-show-menus true
+# https://www.howtogeek.com/251616/how-to-move-the-unity-desktops-launcher-to-the-bottom-of-your-screen-on-ubuntu-16.04/
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+# TODO automatic updates: https://www.garron.me/en/linux/turn-off-stop-ubuntu-automatic-update.html
 
 # https://askubuntu.com/questions/153597/editing-gsettings-add-icon-to-launcher-by-command?noredirect=1&lq=1
 # /usr/share/applications
