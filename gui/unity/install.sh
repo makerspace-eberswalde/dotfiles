@@ -13,5 +13,6 @@ python ~/.launcher_append_item.py gnome-terminal.desktop 0
 python ~/.launcher_append_item.py google-chrome.desktop 1
 python ~/.launcher_append_item.py firefox.desktop 2
 python ~/.launcher_append_item.py nautilus-home.desktop 3
-python ~/.launcher_append_item.py gvim.desktop 4
+python ~/.launcher_append_item.py gedit.desktop 4
 python ~/.launcher_append_item.py vim.desktop 5
+python ~/.launcher_append_item.py dropbox.desktop 6
