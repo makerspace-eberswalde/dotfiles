@@ -10,6 +10,10 @@ cd ~/.dotfiles/gui/inkscape &&
 #cd ~/.dotfiles/gui/blender &&
 	#sh install.sh &&
 
+	# [INSTALL] blender
+cd ~/.dotfiles/gui/system-load-indicator &&
+	sh install.sh &&
+
 	# [INSTALL] dropbox
 cd ~/.dotfiles/gui/dropbox &&
 	sh install.sh &&
