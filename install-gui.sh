@@ -1,5 +1,5 @@
 # [INSTALL] oneliner
-sudo apt-get install update &&
+sudo apt-get update &&
   sudo apt-get install -y vlc &&
 
   # [INSTALL] google-chrome
