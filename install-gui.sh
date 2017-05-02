@@ -30,6 +30,10 @@ cd ~/.dotfiles/gui/virtualbox &&
 cd ~/.dotfiles/gui/unity &&
   sh install.sh &&
 
+  # [INSTALL] openra
+cd ~/.dotfiles/gui/openra &&
+  sh install.sh &&
+
   # [INSTALL] dropbox
 cd ~/.dotfiles/gui/dropbox &&
   sh install.sh &&
