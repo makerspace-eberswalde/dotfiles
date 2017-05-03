@@ -23,8 +23,8 @@ cd ~/.dotfiles/gui/freemind &&
   sh install.sh &&
 
   # [INSTALL] virtualbox
-cd ~/.dotfiles/gui/virtualbox &&
-  sh install.sh &&
+#cd ~/.dotfiles/gui/virtualbox &&
+  #sh install.sh &&
 
   # [INSTALL] unity
 cd ~/.dotfiles/gui/unity &&
