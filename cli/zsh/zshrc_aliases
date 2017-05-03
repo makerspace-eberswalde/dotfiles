@@ -1,5 +1,6 @@
 # DO NOT CHANGE THIS FILE!!!!! --> CHANGE YOUR ALIASES IN .zshrc
 # ==============================================================
+
 # CODE
 alias tes="cd ~/code/test && lisa"
 alias code="cd ~/code && lisa"
