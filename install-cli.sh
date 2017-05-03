@@ -3,7 +3,7 @@ echo "START CLI INSTALLATION" &&
 	echo "======================================================" &&
 
 	# [INSTALL] oneliner
-sudo apt-get update &&
+sudo apt-get update &> /dev/null &&
 	sudo apt-get install -y curl &&
 	#sudo apt-get install -y tee &&
 	sudo apt-get install -y git &&
