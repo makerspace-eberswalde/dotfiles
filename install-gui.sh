@@ -26,10 +26,6 @@ cd ~/.dotfiles/gui/freemind &&
 #cd ~/.dotfiles/gui/virtualbox &&
   #sh install.sh &&
 
-  # [INSTALL] unity
-cd ~/.dotfiles/gui/unity &&
-  sh install.sh &&
-
   # [INSTALL] openra
 #cd ~/.dotfiles/gui/openra &&
   #sh install.sh &&
