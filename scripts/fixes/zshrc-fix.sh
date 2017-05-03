@@ -3,4 +3,4 @@
 echo "\n.zshrc"
 echo "---------------------\n"
 FILE_RC=~/.dotfiles/cli/zsh/zshrc &&
-cp -f $FILE_RC ~/.zshrc &&
+cp -f $FILE_RC ~/.zshrc
