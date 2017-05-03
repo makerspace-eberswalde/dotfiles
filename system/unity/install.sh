@@ -10,8 +10,8 @@ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 # /usr/share/applications
 # ~/.local/share/applications
 # find pathes: https://ubuntuforums.org/showthread.php?t=1256494
-ln -s ~/.dotfiles/gui/unity/launcher_append_item.py ~/.launcher_append_item.py &&
-cp ~/.dotfiles/gui/unity/desktop/* ~/.local/share/applications &&
+ln -s ~/.dotfiles/system/unity/launcher_append_item.py ~/.launcher_append_item.py &&
+cp ~/.dotfiles/system/unity/desktop/* ~/.local/share/applications &&
 
 sudo apt-get install -y python-dbus &&
 python ~/.launcher_append_item.py gnome-terminal.desktop 0 &&
