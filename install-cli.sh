@@ -49,6 +49,7 @@ cd ~/.dotfiles/cli/tmux &&
 	# [INSTALL] zsh (depends on tmux)
 cd ~/.dotfiles/cli/zsh &&
 	sh install.sh &&
+	sh configure.sh &&
 
 	# [INSTALL] nodejs
 cd ~/.dotfiles/cli/nodejs &&
