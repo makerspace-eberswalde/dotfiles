@@ -70,7 +70,7 @@ alias zshrc.setup="vim ~/.zshrc_setup"
 alias zrcs="zshrc.setup"
 alias zshrc.functions="vim ~/.zshrc_functions"
 alias zrcf="zshrc.functions"
-alias zshrc.aliases="vim ~/.zshrc_functions"
+alias zshrc.aliases="vim ~/.zshrc_aliases"
 alias zrca="zshrc.aliases"
 # MISC
 alias lisa="ls -lisa"
