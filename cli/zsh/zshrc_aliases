@@ -50,7 +50,7 @@ alias tftp.download.distros="sh /var/lib/tftpboot/install/script-download-distro
 alias tftp.configure="sh /var/lib/tftpboot/install/configure.sh"
 alias tftp.syslinux="cd /usr/lib/syslinux && ls -lisa"
 alias tftp.start.preseed-http-server="cd /var/lib/tftpboot/http && http-server"
-alias tftp.vim='cd /var/lib/tftpboot && sudo vim TODO.md'
+alias tftp.vim="cd /var/lib/tftpboot && sudo vim TODO.md -c ':NERDTreeFind'"
 alias tftp.update='cd /var/lib/tftpboot && sudo git pull'
 # TMUX
 alias mux="tmuxinator start"
